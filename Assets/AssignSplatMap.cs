@@ -37,7 +37,7 @@ public class AssignSplatMap : MonoBehaviour {
                 // Texture[0] is stronger at higher altitudes
                 splatWeights[1] = (height);
 
-                Debug.Log("height: " + height.ToString() + " max height: " + terrainData.heightmapHeight.ToString());
+                //Debug.Log("height: " + height.ToString() + " max height: " + terrainData.heightmapHeight.ToString());
 
                 // Texture[1] is stronger at lower altitudes
                 splatWeights[0] = (terrainData.heightmapHeight - height);
