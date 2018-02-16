@@ -1,64 +1,82 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Linq; // used for Sum of array
- 
-public class AssignSplatMap : MonoBehaviour {
 
-    void Start() {
+public class AssignSplatMap : MonoBehaviour
+{
+    TerrainData terrainData;
+
+    // Splat map is data used to represent which texture is shown.
+    // The map is a 3D array: [coordinate x, coordinate y, texture index]
+    // The first two parts of the array represent the coordinate, and the last part
+    // represents the texture at that coordinate. The texture is represented as a float:
+    // a percentage from 0 to 1, which 0 being hidden and 1 being fully opaque.
+
+    float[] PixelSplatWeights(int x, int y)
+    {
+        // Normalise x/y coordinates to percentages of the alphamap size.
+        // The percentage is represented as 0-1, instead of 0-100.
+        float x_01 = (float)x / terrainData.alphamapWidth;
+        float y_01 = (float)y / terrainData.alphamapHeight;
+
+        // Get the height of this coordinate on the terrain.
+        // `GetHeight` expects a coordinate in the heightmap.
+        float height = terrainData.GetHeight(
+            Mathf.RoundToInt(y_01 * terrainData.heightmapHeight),
+            Mathf.RoundToInt(x_01 * terrainData.heightmapWidth)
+        );
+
+        // Setup an array to record the mix of texture weights at this point
+        // alphamapLayer are textures tied to the Terrain. Edit these in
+        // Terrain -> Paint Textures (paintbrush icon) -> Textures
+        float[] splatWeights = new float[terrainData.alphamapLayers];
+        // Get the maximum height that the terrain can be.
+        float maxHeight = terrainData.size.y;
+
+        for (int i = 0; i < splatWeights.Length; i++)
+        {
+            float bottomOfSection = maxHeight * i / splatWeights.Length;
+            float topOfSection = maxHeight * (i + 1) / splatWeights.Length;
+
+            if (bottomOfSection <= height && height <= topOfSection)
+            {
+                splatWeights[i] = 1;
+            }
+        }
+
+        // Sum of all textures weights must add to 1, so calculate normalization factor from sum of weights
+        float weightsSum = splatWeights.Sum();
+        // Loop through each terrain texture
+        for (int i = 0; i < terrainData.alphamapLayers; i++)
+        {
+
+            // Normalize so that sum of all texture weights = 1
+            splatWeights[i] /= weightsSum;
+        }
+
+        return splatWeights;
+    }
+
+    void Start()
+    {
         // Get the attached terrain component
         Terrain terrain = GetComponent<Terrain>();
 
         // Get a reference to the terrain data
-        TerrainData terrainData = terrain.terrainData;
+        terrainData = terrain.terrainData;
 
         // Splatmap data is stored internally as a 3d array of floats, so declare a new empty array ready for your custom splatmap data:
         float[,,] splatmapData = new float[terrainData.alphamapWidth, terrainData.alphamapHeight, terrainData.alphamapLayers];
 
-        for (int y = 0; y < terrainData.alphamapHeight; y++) {
-            for (int x = 0; x < terrainData.alphamapWidth; x++) {
-                // Normalise x/y coordinates to range 0-1 
-                float y_01 = (float)y / (float)terrainData.alphamapHeight;
-                float x_01 = (float)x / (float)terrainData.alphamapWidth;
-
-                // Sample the height at this location (note GetHeight expects int coordinates corresponding to locations in the heightmap array)
-                float height = terrainData.GetHeight(Mathf.RoundToInt(y_01 * terrainData.heightmapHeight), Mathf.RoundToInt(x_01 * terrainData.heightmapWidth));
-
-                // Calculate the normal of the terrain (note this is in normalised coordinates relative to the overall terrain dimensions)
-                Vector3 normal = terrainData.GetInterpolatedNormal(y_01, x_01);
-
-                // Calculate the steepness of the terrain
-                float steepness = terrainData.GetSteepness(y_01, x_01);
-
-                // Setup an array to record the mix of texture weights at this point
-                float[] splatWeights = new float[terrainData.alphamapLayers];
-
-                // CHANGE THE RULES BELOW TO SET THE WEIGHTS OF EACH TEXTURE ON WHATEVER RULES YOU WANT
-
-                // Texture[0] is stronger at higher altitudes
-                splatWeights[1] = (height);
-
-                //Debug.Log("height: " + height.ToString() + " max height: " + terrainData.heightmapHeight.ToString());
-
-                // Texture[1] is stronger at lower altitudes
-                splatWeights[0] = (terrainData.heightmapHeight - height);
-
-                // Texture[2] stronger on flatter terrain
-                // Note "steepness" is unbounded, so we "normalise" it by dividing by the extent of heightmap height and scale factor
-                // Subtract result from 1.0 to give greater weighting to flat surfaces
-                //splatWeights[2] = 1.0f - Mathf.Clamp01(steepness * steepness / (terrainData.heightmapHeight / 5.0f));
-
-                // Texture[3] increases with height but only on surfaces facing positive Z axis 
-                //splatWeights[3] = height * Mathf.Clamp01(normal.z);
-
-                // Sum of all textures weights must add to 1, so calculate normalization factor from sum of weights
-                float z = splatWeights.Sum();
+        for (int y = 0; y < terrainData.alphamapHeight; y++)
+        {
+            for (int x = 0; x < terrainData.alphamapWidth; x++)
+            {
+                var splatWeights = PixelSplatWeights(x, y);
 
                 // Loop through each terrain texture
-                for (int i = 0; i < terrainData.alphamapLayers; i++) {
-
-                    // Normalize so that sum of all texture weights = 1
-                    splatWeights[i] /= z;
-
+                for (int i = 0; i < terrainData.alphamapLayers; i++)
+                {
                     // Assign this point to the splatmap array
                     splatmapData[x, y, i] = splatWeights[i];
                 }
