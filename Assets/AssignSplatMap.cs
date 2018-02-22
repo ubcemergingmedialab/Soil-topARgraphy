@@ -41,6 +41,7 @@ public class AssignSplatMap : MonoBehaviour
             if (bottomOfSection <= height && height <= topOfSection)
             {
                 splatWeights[i] = 1;
+                break;
             }
         }
 
