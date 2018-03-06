@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -59,11 +58,19 @@ public class PanelPager : MonoBehaviour
         SetButtonsInteractable();
     }
 
+    /// <summary>
+    /// Use this as the On Click listener for a UI button, to move to the
+    /// previous panel.
+    /// </summary>
     public void PreviousPanel()
     {
         ChangeActivePanel(currentIndex - 1);
     }
 
+    /// <summary>
+    /// Use this as the On Click listener for a UI button, to move to the
+    /// next panel.
+    /// </summary>
     public void NextPanel()
     {
         ChangeActivePanel(currentIndex + 1);
