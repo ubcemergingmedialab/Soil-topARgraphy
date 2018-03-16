@@ -2,17 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Used to open panels corresponding to some flag when clicked by the user
+/// </summary>
 public class Raycaster : MonoBehaviour
 {
+    /// Layers with flags
     public LayerMask flagLayers;
 
+    /// <summary>Called when the user clicks some point on the screen</summary>
+    /// <param name="position">Screen point clicked by user</param>
     void TappedFlag(Vector3 position)
     {
+        // Create ray from screen position
         var ray = Camera.main.ScreenPointToRay(position);
 
-        RaycastHit hit = new RaycastHit();
+        // Cast a ray based on the ray struct. Check if it hits anything
+        var hit = new RaycastHit();
         if (Physics.Raycast(ray, out hit, Mathf.Infinity, flagLayers))
         {
+            // Check if the object hit by the raycast has a FlagPanel component.
+            // Log a warning if not. If it does, make the referenced panel active.
             var flagPanel = hit.collider.GetComponent<FlagPanel>();
             if (!flagPanel)
             {
