@@ -1,46 +1,71 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; 
+using UnityEngine.UI;
 
 
-public class quizButton : MonoBehaviour {
+public class QuizButton : MonoBehaviour {
+	/// <summary>Default title, used when quiz is reset.</summary>
+	public string title = "Hey, want to take a quiz?";
 
-	public GameObject Textbox;  
-	public GameObject Answer1; 
-	public GameObject Answer2; 
-	public GameObject Answer3; 
-	public GameObject Answer4; 
-	public int ChoiceMade; 
+	/// <summary>Reference to response textbox</summary>
+	public Text Textbox;
 
-	public void ChoiceOption1 () {
-		Textbox.GetComponent<Text>().text = "Yeees"; 
-		ChoiceMade = 1; 
-	}
+	/// <summary>
+	/// List of possible responses when an answer is clicked.
+	/// The index of each string corresponds to the index of the button.
+	/// </summary>
+	public List<string> Responses = new List<string>() {
+		"Yeees",
+		"Aww why not?",
+		"please?",
+		"CORRECT! A+ for you"
+	};
 
-	public void ChoiceOption2 () {
-		Textbox.GetComponent<Text>().text = "Aww why not?"; 
-		ChoiceMade = 2; 
-	}
+	/// <summary>
+	/// List of buttons that can be clicked.
+	/// When an answer is selected, all other buttons will be hidden.
+	/// </summary>
+	public List<Button> AnswerButtons = new List<Button>();
+	public int ChoiceMade = -1;
 
-	public void ChoiceOption3 () {
-		Textbox.GetComponent<Text>().text = "please?"; 
-		ChoiceMade = 3; 
-	}
+	/// <summary>
+  /// Click listener assigned to the answer buttons. Should be called
+	/// with the index of the button.
+  /// </summary>
+	public void ChooseOption(int num) {
+		Textbox.text = num < Responses.Count ? Responses[num] : "Correct";
+		ChoiceMade = num;
 
-	public void ChoiceOption4 () {
-		Textbox.GetComponent<Text>().text = "CORRECT! A+ for you"; 
-		ChoiceMade = 4; 
-	}
-
-	void Update() {
-		if (ChoiceMade >= 1) {
-			Answer1.SetActive (false);  // hide object when selected
-			Answer2.SetActive (false); 
-			Answer3.SetActive (false); 
-			Answer4.SetActive (false); 
+		// hide other options
+		int i = 0;
+		foreach (var button in AnswerButtons) {
+			if (i != num)	button.gameObject.SetActive(false);
+			i++;
 		}
 	}
 
+	/// <summary>
+  /// Call this function to reset the quiz panel.
+  /// </summary>
+	public void ResetQuiz() {
+		Textbox.text = title.ToUpper();
+		ChoiceMade = -1;
+		foreach (var button in AnswerButtons) {
+			button.gameObject.SetActive(true);
+		}
+	}
 
+	/// <summary>
+	/// Setup buttons. Will reset their On Click listeners.
+	/// </summary>
+	[ContextMenu("Setup Answer Buttons")]
+	public void SetupButtons() {
+		int i = 0;
+		foreach (var button in AnswerButtons) {
+			button.onClick.RemoveAllListeners();
+			button.onClick.AddListener(() => ChooseOption(i));
+			i++;
+		}
+	}
 }
