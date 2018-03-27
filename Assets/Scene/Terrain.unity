@@ -156,7 +156,11 @@ Prefab:
         type: 2}
       propertyPath: panel
       value: 
-      objectReference: {fileID: 1844113146}
+      objectReference: {fileID: 1898280935}
+    - target: {fileID: 1286174086372146, guid: 3efbc94feab0a8c49b0305983bfd92da, type: 2}
+      propertyPath: m_Name
+      value: 1Podzol
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3efbc94feab0a8c49b0305983bfd92da, type: 2}
   m_IsPrefabParent: 0
@@ -405,7 +409,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 600, y: -300}
-  m_SizeDelta: {x: 400, y: 200}
+  m_SizeDelta: {x: 600, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &283975481
 MonoBehaviour:
@@ -476,7 +480,7 @@ GameObject:
   - component: {fileID: 322914648}
   - component: {fileID: 322914652}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Toggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -551,7 +555,7 @@ RectTransform:
   m_Children:
   - {fileID: 283975480}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -627,11 +631,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
-    m_MaxSize: 40
+    m_MaxSize: 50
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -942,7 +946,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &786662775
 GameObject:
@@ -961,7 +965,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!154 &786662776
 TerrainCollider:
   m_ObjectHideFlags: 0
@@ -1012,10 +1016,9 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.55, y: -0.06, z: -0.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1263354812}
+  m_Children: []
   m_Father: {fileID: 1580739014}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &786662779
 MonoBehaviour:
@@ -2331,7 +2334,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1263354811}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.12, z: 0}
+  m_LocalPosition: {x: -0.55, y: -0.17999999, z: -0.48}
   m_LocalScale: {x: 0.005, y: 0.005, z: 0.005}
   m_Children:
   - {fileID: 452499778}
@@ -2341,7 +2344,7 @@ Transform:
   - {fileID: 1772935726}
   - {fileID: 2035749296}
   - {fileID: 1098145200}
-  m_Father: {fileID: 786662778}
+  m_Father: {fileID: 1580739014}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1263354813
@@ -2358,6 +2361,36 @@ MonoBehaviour:
   flagLayers:
     serializedVersion: 2
     m_Bits: 256
+--- !u!1 &1274528115
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1274528116}
+  m_Layer: 0
+  m_Name: InfoPanels
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1274528116
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1274528115}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.18998091, y: 0.27852437, z: -0.044493906}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1844113150}
+  - {fileID: 1898280940}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1330604295 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224295252776442002, guid: 09e4f28d5e1c43e4eb82e64b9cb2e9ba,
@@ -2465,10 +2498,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1263354812}
   - {fileID: 786662778}
   - {fileID: 2048054744}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0.03, y: 0, z: 0}
 --- !u!1001 &1600644000
 Prefab:
@@ -2566,82 +2600,6 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1685401445610976, guid: c2c92b7f3690d1041930cbf563a3dd65, type: 2}
-      propertyPath: m_Name
-      value: InfoPanel
-      objectReference: {fileID: 0}
-    - target: {fileID: 114366883677273366, guid: c2c92b7f3690d1041930cbf563a3dd65,
-        type: 2}
-      propertyPath: m_Text
-      value: PODZOLIC
-      objectReference: {fileID: 0}
-    - target: {fileID: 114090130464337048, guid: c2c92b7f3690d1041930cbf563a3dd65,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: f37b85ea063e5074c8cfc8d7c988df29,
-        type: 3}
-    - target: {fileID: 114612041543407078, guid: c2c92b7f3690d1041930cbf563a3dd65,
-        type: 2}
-      propertyPath: m_Text
-      value: Podzolic soils are forested soils found primarily on sandy deposits in
-        ecozones (or parts of ecozones) where the mean annual precipitation is above
-        700 mm. Coniferous-dominated plant communities are the major vegetation type
-        found on Podzolic soils. Podzolic soils have B horizons that are enriched
-        with amorphous material composed of humified organic matter, aluminum and
-        iron. These soils generally have organic surface horizons, a light coloured
-        eluvial horizon (which may be absent), and a reddish to black B horizon with
-        an abrupt upper boundary.
-      objectReference: {fileID: 0}
-    - target: {fileID: 224572735792275836, guid: c2c92b7f3690d1041930cbf563a3dd65,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 206.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224572735792275836, guid: c2c92b7f3690d1041930cbf563a3dd65,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -13.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224572735792275836, guid: c2c92b7f3690d1041930cbf563a3dd65,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 113.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224572735792275836, guid: c2c92b7f3690d1041930cbf563a3dd65,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 113.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224015635237336372, guid: c2c92b7f3690d1041930cbf563a3dd65,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: -122.9751
-      objectReference: {fileID: 0}
-    - target: {fileID: 224015635237336372, guid: c2c92b7f3690d1041930cbf563a3dd65,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 359.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 224015635237336372, guid: c2c92b7f3690d1041930cbf563a3dd65,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -13.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224015635237336372, guid: c2c92b7f3690d1041930cbf563a3dd65,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 393.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114612041543407078, guid: c2c92b7f3690d1041930cbf563a3dd65,
-        type: 2}
-      propertyPath: m_FontData.m_FontSize
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 1685401445610976, guid: c2c92b7f3690d1041930cbf563a3dd65, type: 2}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c2c92b7f3690d1041930cbf563a3dd65, type: 2}
@@ -2862,20 +2820,20 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1844113146}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.044493906}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1104568567}
   - {fileID: 233562370}
   - {fileID: 1330604295}
   - {fileID: 480241254}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 1274528116}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.18998091, y: -0.27852437}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1844113151
@@ -3061,7 +3019,7 @@ GameObject:
   - component: {fileID: 1898280937}
   - component: {fileID: 1898280936}
   m_Layer: 5
-  m_Name: Canvas (1)
+  m_Name: 1Podzol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3145,20 +3103,20 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1898280935}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.044493906}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1600644001}
   - {fileID: 1888312068}
   - {fileID: 485858757}
   - {fileID: 1163852864}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 1274528116}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.18998091, y: -0.27852437}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!1001 &2005947473
@@ -3257,20 +3215,6 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224669709815995386, guid: 09e4f28d5e1c43e4eb82e64b9cb2e9ba,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224556143006701158, guid: 09e4f28d5e1c43e4eb82e64b9cb2e9ba,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1296849534070228, guid: 09e4f28d5e1c43e4eb82e64b9cb2e9ba, type: 2}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09e4f28d5e1c43e4eb82e64b9cb2e9ba, type: 2}
@@ -3437,7 +3381,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4867834046800562, guid: e6b749c6d877f4c19a5a5c3c0783d53b, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114478715909612932, guid: e6b749c6d877f4c19a5a5c3c0783d53b,
         type: 2}
