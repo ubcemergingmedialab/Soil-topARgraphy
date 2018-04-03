@@ -78,7 +78,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1790351117964952
 GameObject:
   m_ObjectHideFlags: 0
@@ -142,7 +142,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: f37b85ea063e5074c8cfc8d7c988df29, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -176,13 +176,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 5
     m_MaxSize: 61
-    m_Alignment: 4
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: TITLE
+  m_Text: PODZOLIC
 --- !u!114 &114612041543407078
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -204,18 +204,24 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: ea3bcf4c0e733c84f88e5d80ff5b6878, type: 3}
-    m_FontSize: 16
+    m_FontSize: 15
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lorem ipsum, enter the description here
+  m_Text: Podzolic soils are forested soils found primarily on sandy deposits in ecozones
+    (or parts of ecozones) where the mean annual precipitation is above 700 mm. Coniferous-dominated
+    plant communities are the major vegetation type found on Podzolic soils. Podzolic
+    soils have B horizons that are enriched with amorphous material composed of humified
+    organic matter, aluminum and iron. These soils generally have organic surface
+    horizons, a light coloured eluvial horizon (which may be absent), and a reddish
+    to black B horizon with an abrupt upper boundary.
 --- !u!114 &114800138001503062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -288,8 +294,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -221, y: -83}
-  m_SizeDelta: {x: 225.9, y: 354.5}
+  m_AnchoredPosition: {x: -122.9751, y: -13.5}
+  m_SizeDelta: {x: 359.9, y: 393.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224137589242653124
 RectTransform:
@@ -346,8 +352,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 220, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 206.5, y: -13.5}
+  m_SizeDelta: {x: 113.5, y: 113.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224763696767948380
 RectTransform:
