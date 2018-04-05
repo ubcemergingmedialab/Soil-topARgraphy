@@ -4,11 +4,13 @@ using Vuforia;
 
 public class DeployStageOnce : MonoBehaviour
 {
-
     public GameObject AnchorStage;
     private PositionalDeviceTracker _deviceTracker;
     private GameObject _previousAnchor;
 
+    /// <summary>
+    /// If true, then the terrain will be placed when the user clicks
+    /// </summary>
     public bool willPlace = true;
 
     public void Start()
@@ -19,7 +21,7 @@ public class DeployStageOnce : MonoBehaviour
             return;
         }
 
-        AnchorStage.SetActive(false);
+        Reset();
     }
 
     public void Awake()
@@ -63,5 +65,10 @@ public class DeployStageOnce : MonoBehaviour
 
         _previousAnchor = anchor;
         willPlace = false;
+    }
+
+    public void Reset() {
+        willPlace = true;
+        AnchorStage.SetActive(false);
     }
 }
