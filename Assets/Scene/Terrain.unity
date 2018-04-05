@@ -2652,7 +2652,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1274528116
 Transform:
   m_ObjectHideFlags: 0
@@ -2922,6 +2922,33 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1685401445610976, guid: c2c92b7f3690d1041930cbf563a3dd65, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114612041543407078, guid: c2c92b7f3690d1041930cbf563a3dd65,
+        type: 2}
+      propertyPath: m_Text
+      value: Podzolic soils are forested soils found primarily on sandy deposits in
+        ecozones (or parts of ecozones) where the mean annual precipitation is above
+        700 mm. Coniferous-dominated plant communities are the major vegetation type
+        found on Podzolic soils. Podzolic soils have B horizons that are enriched
+        with amorphous material composed of humified organic matter, aluminum and
+        iron. These soils generally have organic surface horizons, a light coloured
+        eluvial horizon (which may be absent), and a reddish to black B horizon with
+        an abrupt upper boundary.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114366883677273366, guid: c2c92b7f3690d1041930cbf563a3dd65,
+        type: 2}
+      propertyPath: m_Text
+      value: PODZOLIC
+      objectReference: {fileID: 0}
+    - target: {fileID: 114090130464337048, guid: c2c92b7f3690d1041930cbf563a3dd65,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f37b85ea063e5074c8cfc8d7c988df29,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c2c92b7f3690d1041930cbf563a3dd65, type: 2}
   m_IsPrefabParent: 0
@@ -3077,7 +3104,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1844113147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3345,7 +3372,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1898280936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3424,8 +3451,8 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1898280935}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.044493906}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1600644001}
@@ -3437,7 +3464,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.18998091, y: -0.27852437}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!1001 &2005947473
@@ -3536,6 +3563,15 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1296849534070228, guid: 09e4f28d5e1c43e4eb82e64b9cb2e9ba, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114408202401868990, guid: 09e4f28d5e1c43e4eb82e64b9cb2e9ba,
+        type: 2}
+      propertyPath: m_Text
+      value: 'HEY, WANT TO TAKE A QUIZ? '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09e4f28d5e1c43e4eb82e64b9cb2e9ba, type: 2}
