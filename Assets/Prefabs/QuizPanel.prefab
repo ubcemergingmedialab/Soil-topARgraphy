@@ -275,19 +275,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06ad9e29060f6894eb1a5600eba5d4ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Hey, want to take a quiz?
-  Textbox: {fileID: 114408202401868990}
-  Responses:
-  - Yeees
-  - Aww why not?
-  - please?
-  - CORRECT! A+ for you
-  AnswerButtons:
-  - {fileID: 114815059700640544}
-  - {fileID: 114264978107444422}
-  - {fileID: 114075886036971214}
-  - {fileID: 114594848833148792}
-  ChoiceMade: -1
 --- !u!114 &114075886036971214
 MonoBehaviour:
   m_ObjectHideFlags: 1
