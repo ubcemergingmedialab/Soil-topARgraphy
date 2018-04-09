@@ -1180,7 +1180,7 @@ Prefab:
         type: 2}
       propertyPath: m_VideoClip
       value: 
-      objectReference: {fileID: 32900000, guid: 536e1f5000bfbcb4da3a2045b88bc6b9,
+      objectReference: {fileID: 32900000, guid: 8aa010a20b498414ba3fd0a2fb51fcdc,
         type: 3}
     - target: {fileID: 328459733175175832, guid: 669835d48bfa6b046b3262ca562ff624,
         type: 2}
@@ -1201,7 +1201,7 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: d9d132fc5b0d3d546aa56c383b99658d, type: 3}
+      objectReference: {fileID: 8300000, guid: 2a3c00931272763498b3a5ade03c55f6, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 669835d48bfa6b046b3262ca562ff624, type: 2}
   m_IsPrefabParent: 0
@@ -3569,25 +3569,22 @@ Prefab:
     - target: {fileID: 114612041543407078, guid: c2c92b7f3690d1041930cbf563a3dd65,
         type: 2}
       propertyPath: m_Text
-      value: Podzolic soils are forested soils found primarily on sandy deposits in
-        ecozones (or parts of ecozones) where the mean annual precipitation is above
-        700 mm. Coniferous-dominated plant communities are the major vegetation type
-        found on Podzolic soils. Podzolic soils have B horizons that are enriched
-        with amorphous material composed of humified organic matter, aluminum and
-        iron. These soils generally have organic surface horizons, a light coloured
-        eluvial horizon (which may be absent), and a reddish to black B horizon with
-        an abrupt upper boundary.
+      value: "Luvisols are characterized a textural contrast between the A and the
+        B horizon \u2013 the Ae horizon has less clay than the Bt horizon. This difference
+        in clay content between the two horizons is presumed to arise from the physical
+        transfer of clay (termed lessivage) from the Ae (eluvial) to the Bt (illuvial)
+        horizon by vertically draining soil water."
       objectReference: {fileID: 0}
     - target: {fileID: 114366883677273366, guid: c2c92b7f3690d1041930cbf563a3dd65,
         type: 2}
       propertyPath: m_Text
-      value: PODZOLIC
+      value: LUVISOL
       objectReference: {fileID: 0}
     - target: {fileID: 114090130464337048, guid: c2c92b7f3690d1041930cbf563a3dd65,
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f37b85ea063e5074c8cfc8d7c988df29,
+      objectReference: {fileID: 21300000, guid: 5326b750c0bc62442b886a88e6d983da,
         type: 3}
     - target: {fileID: 1905777634468992, guid: c2c92b7f3690d1041930cbf563a3dd65, type: 2}
       propertyPath: m_IsActive
@@ -5230,7 +5227,7 @@ Prefab:
     - target: {fileID: 114366883677273366, guid: c2c92b7f3690d1041930cbf563a3dd65,
         type: 2}
       propertyPath: m_Text
-      value: PODZOLIC
+      value: PODZOL
       objectReference: {fileID: 0}
     - target: {fileID: 114090130464337048, guid: c2c92b7f3690d1041930cbf563a3dd65,
         type: 2}
