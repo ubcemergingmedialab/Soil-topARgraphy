@@ -610,25 +610,26 @@ Prefab:
     - target: {fileID: 114612041543407078, guid: c2c92b7f3690d1041930cbf563a3dd65,
         type: 2}
       propertyPath: m_Text
-      value: Podzolic soils are forested soils found primarily on sandy deposits in
-        ecozones (or parts of ecozones) where the mean annual precipitation is above
-        700 mm. Coniferous-dominated plant communities are the major vegetation type
-        found on Podzolic soils. Podzolic soils have B horizons that are enriched
-        with amorphous material composed of humified organic matter, aluminum and
-        iron. These soils generally have organic surface horizons, a light coloured
-        eluvial horizon (which may be absent), and a reddish to black B horizon with
-        an abrupt upper boundary.
+      value: "\r\nVertisols are heavy textured soils (with \u2265 60% clay) with shrink-swell
+        characteristics. They lack the horizon development diagnostic of other horizons.
+        Slickenslides and argillipedoturbation (disruption and mixing caused by shrink-swell
+        of the soil mass) are diagnostic features of these soils. The horizons that
+        result from this mixing are inverted of material and are called vertic horizons
+        (e.g., Bv, Cv). As a mass of soil is displaced along a crack, the face of
+        the mass can become very smooth and polished and these polished surfaces are
+        called slickenslides. The horizons in which slickenslides are Bss, Ckss, or
+        Cgss."
       objectReference: {fileID: 0}
     - target: {fileID: 114366883677273366, guid: c2c92b7f3690d1041930cbf563a3dd65,
         type: 2}
       propertyPath: m_Text
-      value: PODZOLIC
+      value: VERTISOL
       objectReference: {fileID: 0}
     - target: {fileID: 114090130464337048, guid: c2c92b7f3690d1041930cbf563a3dd65,
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f37b85ea063e5074c8cfc8d7c988df29,
+      objectReference: {fileID: 21300000, guid: 3e5a0b52071321e4cbae7466875085a5,
         type: 3}
     - target: {fileID: 1905777634468992, guid: c2c92b7f3690d1041930cbf563a3dd65, type: 2}
       propertyPath: m_IsActive
@@ -2010,7 +2011,7 @@ Prefab:
         type: 2}
       propertyPath: m_VideoClip
       value: 
-      objectReference: {fileID: 32900000, guid: 536e1f5000bfbcb4da3a2045b88bc6b9,
+      objectReference: {fileID: 32900000, guid: 81696d46fc579b94aab484a1e4fa7fca,
         type: 3}
     - target: {fileID: 328459733175175832, guid: 669835d48bfa6b046b3262ca562ff624,
         type: 2}
@@ -2031,7 +2032,7 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: d9d132fc5b0d3d546aa56c383b99658d, type: 3}
+      objectReference: {fileID: 8300000, guid: 95bae0c26755efe48baf29b75554d873, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 669835d48bfa6b046b3262ca562ff624, type: 2}
   m_IsPrefabParent: 0
@@ -4039,7 +4040,7 @@ Prefab:
         type: 2}
       propertyPath: m_VideoClip
       value: 
-      objectReference: {fileID: 32900000, guid: 536e1f5000bfbcb4da3a2045b88bc6b9,
+      objectReference: {fileID: 32900000, guid: d68718bbe39ff32429a1a30d46db62ce,
         type: 3}
     - target: {fileID: 328459733175175832, guid: 669835d48bfa6b046b3262ca562ff624,
         type: 2}
@@ -4060,7 +4061,7 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: d9d132fc5b0d3d546aa56c383b99658d, type: 3}
+      objectReference: {fileID: 8300000, guid: 10f4c18ccd4b9f94cba0e3adeda6dedb, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 669835d48bfa6b046b3262ca562ff624, type: 2}
   m_IsPrefabParent: 0
@@ -4958,25 +4959,23 @@ Prefab:
     - target: {fileID: 114612041543407078, guid: c2c92b7f3690d1041930cbf563a3dd65,
         type: 2}
       propertyPath: m_Text
-      value: Podzolic soils are forested soils found primarily on sandy deposits in
-        ecozones (or parts of ecozones) where the mean annual precipitation is above
-        700 mm. Coniferous-dominated plant communities are the major vegetation type
-        found on Podzolic soils. Podzolic soils have B horizons that are enriched
-        with amorphous material composed of humified organic matter, aluminum and
-        iron. These soils generally have organic surface horizons, a light coloured
-        eluvial horizon (which may be absent), and a reddish to black B horizon with
-        an abrupt upper boundary.
+      value: "Chernozemic soils have surface horizons darkened by organic matter accumulation.
+        A chernozemic A horizon must be at least 10 cm thick and be dark in colour.
+        They are generally found under grassland communities or grassland-forest communities
+        with associated shrubs and forbs. The region dominated by Chernozemic soils
+        has mean annual soil temperatures > 0\xB0C but usually < 6\xB0C and experiences
+        water deficits in most growing seasons."
       objectReference: {fileID: 0}
     - target: {fileID: 114366883677273366, guid: c2c92b7f3690d1041930cbf563a3dd65,
         type: 2}
       propertyPath: m_Text
-      value: PODZOLIC
+      value: CHERNOZEM
       objectReference: {fileID: 0}
     - target: {fileID: 114090130464337048, guid: c2c92b7f3690d1041930cbf563a3dd65,
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f37b85ea063e5074c8cfc8d7c988df29,
+      objectReference: {fileID: 21300000, guid: 822b8dd18d06bf547814e6d9bfc3ef97,
         type: 3}
     - target: {fileID: 1905777634468992, guid: c2c92b7f3690d1041930cbf563a3dd65, type: 2}
       propertyPath: m_IsActive
@@ -8882,7 +8881,7 @@ Prefab:
         type: 2}
       propertyPath: m_VideoClip
       value: 
-      objectReference: {fileID: 32900000, guid: 536e1f5000bfbcb4da3a2045b88bc6b9,
+      objectReference: {fileID: 32900000, guid: 22a318e99fedd184d9b4e771b0402422,
         type: 3}
     - target: {fileID: 328459733175175832, guid: 669835d48bfa6b046b3262ca562ff624,
         type: 2}
@@ -8903,7 +8902,7 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: d9d132fc5b0d3d546aa56c383b99658d, type: 3}
+      objectReference: {fileID: 8300000, guid: 0b7f4a3dbdf2ebc4983499a8c3124ece, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 669835d48bfa6b046b3262ca562ff624, type: 2}
   m_IsPrefabParent: 0
