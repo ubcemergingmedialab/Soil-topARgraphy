@@ -7972,25 +7972,23 @@ Prefab:
     - target: {fileID: 114612041543407078, guid: c2c92b7f3690d1041930cbf563a3dd65,
         type: 2}
       propertyPath: m_Text
-      value: Podzolic soils are forested soils found primarily on sandy deposits in
-        ecozones (or parts of ecozones) where the mean annual precipitation is above
-        700 mm. Coniferous-dominated plant communities are the major vegetation type
-        found on Podzolic soils. Podzolic soils have B horizons that are enriched
-        with amorphous material composed of humified organic matter, aluminum and
-        iron. These soils generally have organic surface horizons, a light coloured
-        eluvial horizon (which may be absent), and a reddish to black B horizon with
-        an abrupt upper boundary.
+      value: Soils in this order are composed primarily of organic mater and include
+        soils commonly known as peat, bog or fen soils. Most of these soils are saturated
+        with water for prolonged periods of time. Organic soils contain 17% organic
+        C (or 30% organic matter) by weight. Soils of the Organic order are the dominant
+        wetland soils found in forested regions of Canada but they also occur in non-wetland
+        positions in upland sites where leaf litter accumulates.
       objectReference: {fileID: 0}
     - target: {fileID: 114366883677273366, guid: c2c92b7f3690d1041930cbf563a3dd65,
         type: 2}
       propertyPath: m_Text
-      value: PODZOLIC
+      value: ORGANIC
       objectReference: {fileID: 0}
     - target: {fileID: 114090130464337048, guid: c2c92b7f3690d1041930cbf563a3dd65,
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f37b85ea063e5074c8cfc8d7c988df29,
+      objectReference: {fileID: 21300000, guid: 32afeb4c98286144a810a8fca57f3038,
         type: 3}
     - target: {fileID: 1905777634468992, guid: c2c92b7f3690d1041930cbf563a3dd65, type: 2}
       propertyPath: m_IsActive
