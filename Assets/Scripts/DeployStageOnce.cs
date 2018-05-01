@@ -13,8 +13,10 @@ public class DeployStageOnce : MonoBehaviour
     /// </summary>
     public bool willPlace = true;
 
-    public void Start()
+    public void Awake()
     {
+        VuforiaARController.Instance.RegisterVuforiaStartedCallback(OnVuforiaStarted);
+
         if (AnchorStage == null)
         {
             Debug.Log("AnchorStage must be specified");
@@ -22,11 +24,6 @@ public class DeployStageOnce : MonoBehaviour
         }
 
         Reset();
-    }
-
-    public void Awake()
-    {
-        VuforiaARController.Instance.RegisterVuforiaStartedCallback(OnVuforiaStarted);
     }
 
     public void OnDestroy()
@@ -67,8 +64,14 @@ public class DeployStageOnce : MonoBehaviour
         willPlace = false;
     }
 
-    public void Reset() {
+    public void Reset()
+    {
         willPlace = true;
         AnchorStage.SetActive(false);
+    }
+
+    public void DeactivatePlane()
+    {
+        willPlace = false;
     }
 }
