@@ -1,10 +1,25 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
 
 public class QuizButton : MonoBehaviour
 {
+    [Serializable]
+    public class QuizButtonEntry
+    {
+        public Button button;
+        public string response;
+
+        public QuizButtonEntry(string response)
+        {
+            this.response = response;
+        }
+    }
+
+
     /// <summary>Default title, used when quiz is reset.</summary>
     public string title = "Hey, want to take a quiz?";
 
@@ -12,21 +27,16 @@ public class QuizButton : MonoBehaviour
     public Text Textbox;
 
     /// <summary>
-    /// List of possible responses when an answer is clicked.
-    /// The index of each string corresponds to the index of the button.
-    /// </summary>
-    public List<string> Responses = new List<string>() {
-        "Yeees",
-        "Aww why not?",
-        "please?",
-        "CORRECT! A+ for you"
-    };
-
-    /// <summary>
-    /// List of buttons that can be clicked.
+    /// List of buttons and possible responses when an answer is clicked.
     /// When an answer is selected, all other buttons will be hidden.
     /// </summary>
-    public List<Button> AnswerButtons = new List<Button>();
+    public List<QuizButtonEntry> Answers = new List<QuizButtonEntry>() {
+        new QuizButtonEntry("Yeees"),
+        new QuizButtonEntry("Aww why not?"),
+        new QuizButtonEntry("please?"),
+        new QuizButtonEntry("CORRECT! A+ for you")
+    };
+
     public int ChoiceMade = -1;
 
     /// <summary>
@@ -35,15 +45,17 @@ public class QuizButton : MonoBehaviour
     /// </summary>
     public void ChooseOption(int num)
     {
-        Textbox.text = num < Responses.Count ? Responses[num] : "Correct";
+        Textbox.text = num < Answers.Count ? Answers[num].response : "Correct";
         ChoiceMade = num;
 
+        var query = Answers
+            .Where((answer, i) => i != num)
+            .Select(answer => answer.button.gameObject);
+
         // hide other options
-        int i = 0;
-        foreach (var button in AnswerButtons)
+        foreach (var buttonObject in query)
         {
-            if (i != num) button.gameObject.SetActive(false);
-            i++;
+            buttonObject.SetActive(false);
         }
     }
 
@@ -54,9 +66,12 @@ public class QuizButton : MonoBehaviour
     {
         Textbox.text = title.ToUpper();
         ChoiceMade = -1;
-        foreach (var button in AnswerButtons)
+
+        var query = from answer in Answers select answer.button.gameObject;
+
+        foreach (var button in query)
         {
-            button.gameObject.SetActive(true);
+            button.SetActive(true);
         }
     }
 
@@ -66,12 +81,12 @@ public class QuizButton : MonoBehaviour
     [ContextMenu("Setup Answer Buttons")]
     public void SetupButtons()
     {
-        int i = 0;
-        foreach (var button in AnswerButtons)
+        var query = Answers.Select((answer, index) => new { index, button = answer.button });
+
+        foreach (var item in query)
         {
-            button.onClick.RemoveAllListeners();
-            button.onClick.AddListener(() => ChooseOption(i));
-            i++;
+            item.button.onClick.RemoveAllListeners();
+            item.button.onClick.AddListener(() => ChooseOption(item.index));
         }
     }
 }
