@@ -277,16 +277,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Hey, want to take a quiz?
   Textbox: {fileID: 114408202401868990}
-  Responses:
-  - Yeees
-  - Aww why not?
-  - please?
-  - CORRECT! A+ for you
-  AnswerButtons:
-  - {fileID: 114815059700640544}
-  - {fileID: 114264978107444422}
-  - {fileID: 114075886036971214}
-  - {fileID: 114594848833148792}
+  Answers:
+  - button: {fileID: 114815059700640544}
+    response: Yeees
+  - button: {fileID: 114264978107444422}
+    response: Aww why not?
+  - button: {fileID: 114075886036971214}
+    response: please?
+  - button: {fileID: 114594848833148792}
+    response: CORRECT! A+ for you
   ChoiceMade: -1
 --- !u!114 &114075886036971214
 MonoBehaviour:
