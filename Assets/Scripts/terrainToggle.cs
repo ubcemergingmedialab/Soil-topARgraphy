@@ -1,13 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 
-public class terrainToggle : MonoBehaviour {
-	public GameObject Terrain; 
-	public GameObject Map; 	
+public class TerrainToggle : MonoBehaviour
+{
+    public GameObject Heightmap;
+    public GameObject Map;
 
-	public void Toggle_Changed(bool val){
-		Terrain.SetActive (!val); 
-		Map.SetActive (val);	
-	}
+    public void ToggleChanged(Toggle change)
+    {
+        Heightmap.SetActive(!change.isOn);
+        Map.SetActive(change.isOn);
+    }
 }
