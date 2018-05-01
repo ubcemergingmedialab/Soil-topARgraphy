@@ -4,13 +4,27 @@ using UnityEngine.Events;
 /// <summary>Dispatches events when `SetActive()` is called</summary>
 public class ActiveChange : MonoBehaviour
 {
-    public UnityEvent onEnable;
-		public UnityEvent onDisable;
+    /// <summary>If true, also emit the onEnable/onDisable events when the program starts</summary>
+    public bool emitOnStart = false;
 
-		void OnEnable() {
-			onEnable.Invoke();
-		}
-		void OnDisable() {
-			onDisable.Invoke();
-		}
+    public UnityEvent onEnable;
+    public UnityEvent onDisable;
+
+    void Start()
+    {
+        if (emitOnStart)
+        {
+            if (gameObject.activeInHierarchy) onEnable.Invoke();
+            else onDisable.Invoke();
+        }
+    }
+
+    void OnEnable()
+    {
+        onEnable.Invoke();
+    }
+    void OnDisable()
+    {
+        onDisable.Invoke();
+    }
 }
