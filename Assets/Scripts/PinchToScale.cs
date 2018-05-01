@@ -5,9 +5,9 @@ using UnityEngine;
 /// <summary>Scales a transform in response to the user pinching the screen</summary>
 public class PinchToScale : MonoBehaviour
 {
-    public float scaleSpeed = 0.5f;
-    public Vector3 minScale = Vector3.one * 0.1f;
-    public Vector3 maxScale = Vector3.one;
+    public float scaleSpeed = 0.1f;
+    public Vector3 minScale = Vector3.one;
+    public Vector3 maxScale = Vector3.one * 4;
 
     /// <summary>Find the difference in the distances between each frame.</summary>
     static float GetTouchDeltaMagnitudeDiff()
@@ -29,9 +29,9 @@ public class PinchToScale : MonoBehaviour
         return deltaMagnitudeDiff;
     }
 
-    Vector3 Scale(Vector3 input, float delta)
+    Vector3 Scale(Vector3 oldScale, float delta)
     {
-        Vector3 newScale = input * delta * scaleSpeed;
+        Vector3 newScale = oldScale + (Vector3.one * delta * scaleSpeed);
         newScale = Vector3.Min(newScale, maxScale);
         newScale = Vector3.Max(newScale, minScale);
         return newScale;
