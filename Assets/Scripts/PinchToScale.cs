@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>Scales a transform in response to the user pinching the screen</summary>
 public class PinchToScale : MonoBehaviour
 {
-    public float scaleSpeed = 0.1f;
+    public float scaleSpeed = -0.1f;
     public Vector3 minScale = Vector3.one;
     public Vector3 maxScale = Vector3.one * 4;
 

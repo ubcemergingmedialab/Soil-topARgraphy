@@ -40,7 +40,7 @@ public class Raycaster : MonoBehaviour
         {
             TappedFlag(Input.mousePosition);
         }
-        else if (Input.touchCount > 0)
+        else if (Input.touchCount == 1)
         {
             TappedFlag(Input.touches[0].position);
         }
