@@ -3990,7 +3990,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d796d7b7db5447949a6ab8cd42755ec8, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d796d7b7db5447949a6ab8cd42755ec8, type: 3}
@@ -4081,7 +4081,7 @@ Prefab:
     - target: {fileID: 224000013044306136, guid: 3adcee2515f8c49f4a7afb3bacf2c56e,
         type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224000013044306136, guid: 3adcee2515f8c49f4a7afb3bacf2c56e,
         type: 2}
@@ -5901,8 +5901,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaleSpeed: 0.5
-  minScale: {x: 0.1, y: 0.1, z: 0.1}
-  maxScale: {x: 1, y: 1, z: 1}
+  minScale: {x: 1, y: 1, z: 1}
+  maxScale: {x: 4, y: 4, z: 4}
 --- !u!1 &1263354811
 GameObject:
   m_ObjectHideFlags: 0
