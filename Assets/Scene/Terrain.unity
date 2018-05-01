@@ -1194,6 +1194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72be016351cb5e34085c757401bc48eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  emitOnStart: 0
   onEnable:
     m_PersistentCalls:
       m_Calls:
@@ -1215,7 +1216,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  emitOnStart: 0
 --- !u!1001 &395920239
 Prefab:
   m_ObjectHideFlags: 0
@@ -3258,6 +3258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72be016351cb5e34085c757401bc48eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  emitOnStart: 1
   onEnable:
     m_PersistentCalls:
       m_Calls:
@@ -3290,7 +3291,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  emitOnStart: 1
 --- !u!1 &877447956
 GameObject:
   m_ObjectHideFlags: 0
@@ -3995,6 +3995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72be016351cb5e34085c757401bc48eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  emitOnStart: 0
   onEnable:
     m_PersistentCalls:
       m_Calls:
@@ -4016,7 +4017,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  emitOnStart: 0
 --- !u!1001 &948195544
 Prefab:
   m_ObjectHideFlags: 0
@@ -6604,6 +6604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72be016351cb5e34085c757401bc48eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  emitOnStart: 0
   onEnable:
     m_PersistentCalls:
       m_Calls:
@@ -6636,7 +6637,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  emitOnStart: 0
 --- !u!1001 &1586045345
 Prefab:
   m_ObjectHideFlags: 0
