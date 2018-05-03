@@ -10,7 +10,10 @@ public class QuizButton : MonoBehaviour
     [Serializable]
     public class QuizButtonEntry
     {
-        public Button button;
+        /// <summary>Button the user can tap</summary>
+        /// <remarks>Set in the inspector</remarks>
+        public Button button = null;
+        /// <summary>Response shown after `button` is tapped</summary>
         public string response;
 
         public QuizButtonEntry(string response)
@@ -37,12 +40,14 @@ public class QuizButton : MonoBehaviour
         new QuizButtonEntry("CORRECT! A+ for you")
     };
 
+    /// <summary>Displays the index of the selected answer in the inspector.</summary>
     public int ChoiceMade = -1;
 
     /// <summary>
     /// Click listener assigned to the answer buttons. Should be called
     /// with the index of the button.
     /// </summary>
+    /// <param name="num">index of the option in `Answers`</param>
     public void ChooseOption(int num)
     {
         Textbox.text = num < Answers.Count ? Answers[num].response : "Correct";
