@@ -2,8 +2,13 @@
 using UnityEngine;
 using Vuforia;
 
+/// <summary>
+/// Script with handlers for Vurforia's hit test events.
+/// </summary>
+[RequireComponent(typeof(PlaneFinderBehaviour))]
 public class DeployStageOnce : MonoBehaviour
 {
+    /// <summary>Stage that will be deployed</summary>
     public GameObject AnchorStage;
     private PositionalDeviceTracker _deviceTracker;
     private GameObject _previousAnchor;
@@ -36,6 +41,9 @@ public class DeployStageOnce : MonoBehaviour
         _deviceTracker = TrackerManager.Instance.GetTracker<PositionalDeviceTracker>();
     }
 
+    /// <summary>
+    /// Callback for <see cref="Vuforia.PlaneFinderBehaviour.OnInteractiveHitTest"/>
+    /// </summary>
     public void OnInteractiveHitTest(HitTestResult result)
     {
         if (!willPlace) return;
@@ -64,12 +72,14 @@ public class DeployStageOnce : MonoBehaviour
         willPlace = false;
     }
 
+    /// <summary>Call to remove the placed stage and allow it to be placed elsewhere</summary>
     public void Reset()
     {
         willPlace = true;
         AnchorStage.SetActive(false);
     }
 
+    /// <summary>Call to not allow the stage to be placed.</summary>
     public void DeactivatePlane()
     {
         willPlace = false;
