@@ -71,6 +71,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4736273607339772}
   - component: {fileID: 328459733175175832}
+  - component: {fileID: 114445870678115118}
   - component: {fileID: 82707525782316294}
   m_Layer: 0
   m_Name: Video Player
@@ -198,6 +199,18 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!114 &114445870678115118
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1881970982275846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954270fbcb8dd204e9d86bb635278212, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path: 
 --- !u!114 &114518714523614422
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -344,7 +357,7 @@ VideoPlayer:
   m_TargetMaterialProperty: _MainTex
   m_RenderMode: 2
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 1
   m_TargetAudioSources: []
