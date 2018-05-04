@@ -7,6 +7,9 @@ public class Raycaster : MonoBehaviour
 {
     /// Layers with flags
     public LayerMask flagLayers;
+	public Transform parent = null;
+
+	private GameObject lastPanel = null;
 
     /// <summary>Called when the user clicks some point on the screen</summary>
     /// <param name="position">Screen point clicked by user</param>
@@ -22,17 +25,29 @@ public class Raycaster : MonoBehaviour
             // Check if the object hit by the raycast has a FlagPanel component.
             // Log a warning if not. If it does, make the referenced panel active.
             var flagPanel = hit.collider.GetComponent<FlagPanel>();
-            if (!flagPanel)
-            {
-                Debug.LogWarning("Missing FlagPanel " + hit.collider.gameObject);
-            }
-            else if (!flagPanel.panel)
-            {
-                Debug.LogWarning(hit.collider.gameObject + " FlagPanel has no panel object set");
-            }
-            else flagPanel.panel.SetActive(true);
+			ProcessFlagPanel (flagPanel, hit.collider.gameObject);
         }
     }
+
+	private void ProcessFlagPanel(FlagPanel flagPanel, GameObject source) {
+		if (!flagPanel) {
+			Debug.LogWarning ("Missing FlagPanel " + source);
+		} else if (flagPanel.path == "") {
+			Debug.LogWarning (source + " FlagPanel has no panel path set");
+		} else {
+			var resource = Resources.Load (flagPanel.path);
+			if (resource == null) {
+				Debug.LogError (flagPanel.path + " from FlagPanel in " + source + " does not point to a valid resource");
+			} else {
+				var panel = Instantiate (resource, parent) as GameObject;
+				panel.SetActive (true);
+
+				if (lastPanel)
+					Object.Destroy (lastPanel);
+				lastPanel = panel;
+			}
+		}
+	}
 
     void Update()
     {
