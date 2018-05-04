@@ -6,6 +6,6 @@ using UnityEngine;
 /// </summary>
 public class FlagPanel : MonoBehaviour
 {
-    /// <summary>Panel that this flag corresponds to </summary>
-    public GameObject panel;
+    /// <summary>Resources path for the panel that this flag corresponds to </summary>
+    public string path;
 }
