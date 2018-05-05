@@ -1,4 +1,4 @@
-## Project Name: Soil TopARgraphy 
+## Soil TopARgraphy 
 
 
 ## Project Description: 
