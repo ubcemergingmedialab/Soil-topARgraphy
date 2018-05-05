@@ -16,3 +16,19 @@ Unity, Vuforia, Blender, Mapbox
 1. Install [Unity](https://unity3d.com/) with the Android Build Support and [Vuforia](https://library.vuforia.com/articles/Training/getting-started-with-vuforia-in-unity.html) Augmented Reality Support components.
 2. Clone this project
 3. Open the project in Unity
+
+# Build iOS 
+
+See also: https://unity3d.com/learn/tutorials/topics/mobile-touch/building-your-unity-game-ios-device-testing
+
+1. Open Unity
+2. File -> Build Setting 
+3. Click "iOS" then the "Switch Platform" button if it isn't disabled
+4. "Build" button then save somewhere on your computer
+5. When building is complete, open the new folder and open the `.xcodeproj` file.
+6. Plug in your iPhone and make sure to turn on development mode if prompted on the Mac.
+7. With XCode open, click "Unity-iPhone" in the top of the left sidebar.
+8. Resolve any errors on the "General" page that opens.
+9. Press the play icon button to build.
+10. Make sure your iPhone trusts the developer team set on the Mac. Settings -> General -> Device Management -> Developer App -> TopARGraphy
+11. Done, you can run and debug.
