@@ -1,3 +1,6 @@
+ 
+<img src="http://eml.ubc.ca/files/2018/05/Soil_TopArgraphy_Logo.png" width="20%" height="20%" style="display:block;margin:0 auto">
+
 ## Objective
 The [Soil TopARgraphy](eml.ubc.ca/projects/soil-topargraphy/) phone app allows UBC students, enrolled in the APBI 200 – Introduction to Soil Science course, to view topographical distribution of different soil types. The objective of the Soil TopARgraphy app is to allow students to learn about the effects of topography on formation of different soil types through an immersive and visual Augmented Reality (AR) terrain.
 This app brings interactivity to the APBI 200 lectures and laboratory sessions focused on soil formation and classification, and in turn, promotes student engagement and deeper comprehension of the material.
