@@ -15,12 +15,12 @@ With the Soil TopARgraphy app, which allows viewing and manipulating a terrain m
 All the features of the app are complete; the app is currently in the testing phase, and will be modified according to the feedback received. The app could be launched into the Apple App Store and Google Play Store for convenient installation. In January 2019, the app will be tested in the APBI 200 – Introduction to Soil Science course and the project team will help with the set-up.
 ## The Team
 Faculty 
-Dr. Maja Krzic, Faculty of Forestry | Faculty of Land and Food Systems
+- Dr. Maja Krzic, Faculty of Forestry | Faculty of Land and Food Systems
 
 Students
-Daphne Liu, Team Lead & Developer (Jan 2018 to present)
-Tiger Oakes, Developer (Mar 2018 to present)
-Emma Ng, UX/UI Designer (Mar 2018 to present)
+- Daphne Liu, Team Lead & Developer (Jan 2018 to present)
+- Tiger Oakes, Developer (Mar 2018 to present)
+- Emma Ng, UX/UI Designer (Mar 2018 to present)
 ## Development
 
 1. Install [Unity](https://unity3d.com/) with the Android Build Support and [Vuforia](https://library.vuforia.com/articles/Training/getting-started-with-vuforia-in-unity.html) Augmented Reality Support components.
