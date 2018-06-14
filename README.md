@@ -9,7 +9,8 @@ As a part of the curriculum, students in the APBI 200 course learn about 10 soil
 
 Augmented Reality (AR) is a technology that overlays digital enhancements on top of existing reality, in this case through your phone like in Pokémon GO. With AR, different soil orders are shown within one real-life terrain across different parts of topography. We chose an area just north of Kamloops, BC as an example of the terrain model since the region is characterized by a great diversity of soil types.
 ## Description
-With the Soil TopARgraphy app, which allows viewing and manipulating a terrain model, APBI 200 students will learn how topography impacts distribution of soil orders through its effects on microclimate (i.e. temperature and water). Students will be able to view the terrain model with a color-coded height map (Image 1) or a photorealistic satellite image (Image 2). Furthermore, students can tap on flags to read about different soil orders, see images, watch a video, and take a self-study quiz to review their understanding (Image 3 and 4).
+With the Soil TopARgraphy app, which allows viewing and manipulating a terrain model, APBI 200 students will learn how topography impacts distribution of soil orders through its effects on microclimate (i.e. temperature and water). Students will be able to view the terrain model with a color-coded height map or a photorealistic satellite image. Furthermore, students can tap on flags to read about different soil orders, see images, watch a video, and take a self-study quiz to review their understanding.
+
 <img src="http://eml.ubc.ca/files/2018/05/topar-1-1.png" width="50%" height="50%" style="display:block;margin:0 auto">
 
 ## Platform: Android and iOS
