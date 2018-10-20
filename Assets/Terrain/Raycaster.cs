@@ -7,7 +7,7 @@ public class Raycaster : MonoBehaviour
 {
     /// Layers with flags
     public LayerMask flagLayers;
-	public Transform parent = null;
+	public UiPanel InfoPanel;
 
 	private GameObject lastPanel = null;
 
@@ -32,20 +32,10 @@ public class Raycaster : MonoBehaviour
 	private void ProcessFlagPanel(FlagPanel flagPanel, GameObject source) {
 		if (!flagPanel) {
 			Debug.LogWarning ("Missing FlagPanel " + source);
-		} else if (flagPanel.path == "") {
+		} else if (flagPanel.Content == null) {
 			Debug.LogWarning (source + " FlagPanel has no panel path set");
 		} else {
-			var resource = Resources.Load (flagPanel.path);
-			if (resource == null) {
-				Debug.LogError (flagPanel.path + " from FlagPanel in " + source + " does not point to a valid resource");
-			} else {
-				var panel = Instantiate (resource, parent) as GameObject;
-				panel.SetActive (true);
-
-				if (lastPanel)
-					Object.Destroy (lastPanel);
-				lastPanel = panel;
-			}
+            InfoPanel.Display(flagPanel.Content);
 		}
 	}
 

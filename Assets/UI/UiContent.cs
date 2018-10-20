@@ -4,6 +4,8 @@ using UnityEngine;
 
 [CreateAssetMenu]
 public class UiContent : ScriptableObject {
+	public Vector3 MapPosition;
+
 	public string Title;
 	[TextArea(3, 10)]
 	public List<string> Description = new List<string>();
