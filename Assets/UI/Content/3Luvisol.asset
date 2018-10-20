@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2904166b7f5b4054e8cc48d5a4c9d51d, type: 3}
+  m_Name: 3Luvisol
+  m_EditorClassIdentifier: 
+  Title: Luvisol
+  Description:
+  - "Luvisols are characterized a textural contrast between the A and the B horizon
+    \u2013 the Ae horizon has less clay than the Bt horizon. This difference in clay
+    content between the two horizons is presumed to arise from the physical transfer
+    of clay (termed lessivage) from the Ae (eluvial) to the Bt (illuvial) horizon
+    by vertically draining soil water."
+  Images:
+  - {fileID: 0}
+  - {fileID: 0}
+  QuizQuestion: Hey, do you want to take a quiz?
+  QuizAnswers:
+  - Yes
+  - No
+  - Maybe
+  - I luv soil

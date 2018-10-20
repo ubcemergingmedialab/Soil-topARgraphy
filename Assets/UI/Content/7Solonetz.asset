@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2904166b7f5b4054e8cc48d5a4c9d51d, type: 3}
+  m_Name: 7Solonetz
+  m_EditorClassIdentifier: 
+  Title: Solonetz
+  Description:
+  - "Solonetzic soils occur in the same ecozones as Chernozemic soils. These soils
+    are characterized by low (exchangeable) calcium to magnesium ratio. The diagnostic
+    horizon is a Bn (or Bnt), which is very hard when dry and which swells and becomes
+    relatively impermeable when wet.\r"
+  - There are four great groups of the Solonetzic order. Three of them represent an
+    idealized evolutionary sequence, which begins with soil with a Bn horizon (Solonetz
+    great group). Sodium-enhanced clay translocation begins, creating an Ae and a
+    Bnt horizon (Solodized Solonetz great group). When the upper Bnt is altered by
+    the weathering processes outlined above, the soils are placed into the Solod great
+    group. In soils formed in parent material high in clay (typically > 60% clay)
+    the Ae/Bnt sequence may be weakly expressed and those soils are classified into
+    the Vertic Solonetz great group.
+  Images:
+  - {fileID: 0}
+  - {fileID: 0}
+  QuizQuestion: Hey, do you want to take a quiz?
+  QuizAnswers:
+  - Yes
+  - No
+  - Maybe
+  - I luv soil

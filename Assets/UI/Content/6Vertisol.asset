@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2904166b7f5b4054e8cc48d5a4c9d51d, type: 3}
+  m_Name: 6Vertisol
+  m_EditorClassIdentifier: 
+  Title: Vertisol
+  Description:
+  - "\rVertisols are heavy textured soils (with \u2265 60% clay) with shrink-swell
+    characteristics. They lack the horizon development diagnostic of other horizons.
+    Slickenslides and argillipedoturbation (disruption and mixing caused by shrink-swell
+    of the soil mass) are diagnostic features of these soils. The horizons that result
+    from this mixing are inverted of material and are called vertic horizons (e.g.,
+    Bv, Cv). As a mass of soil is displaced along a crack, the face of the mass can
+    become very smooth and polished and these polished surfaces are called slickenslides.
+    The horizons in which slickenslides are Bss, Ckss, or Cgss."
+  Images:
+  - {fileID: 0}
+  - {fileID: 0}
+  QuizQuestion: Hey, do you want to take a quiz?
+  QuizAnswers:
+  - Yes
+  - No
+  - Maybe
+  - I luv soil

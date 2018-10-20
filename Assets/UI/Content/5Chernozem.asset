@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2904166b7f5b4054e8cc48d5a4c9d51d, type: 3}
+  m_Name: 5Chernozem
+  m_EditorClassIdentifier: 
+  Title: Chernozem
+  Description:
+  - "Chernozemic soils have surface horizons darkened by organic matter accumulation.
+    A chernozemic A horizon must be at least 10 cm thick and be dark in colour. They
+    are generally found under grassland communities or grassland-forest communities
+    with associated shrubs and forbs. The region dominated by Chernozemic soils has
+    mean annual soil temperatures > 0\xB0C but usually < 6\xB0C and experiences water
+    deficits in most growing seasons."
+  Images:
+  - {fileID: 0}
+  - {fileID: 0}
+  QuizQuestion: Hey, do you want to take a quiz?
+  QuizAnswers:
+  - Yes
+  - No
+  - Maybe
+  - I luv soil

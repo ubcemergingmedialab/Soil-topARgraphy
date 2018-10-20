@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2904166b7f5b4054e8cc48d5a4c9d51d, type: 3}
+  m_Name: 2Brunisol
+  m_EditorClassIdentifier: 
+  Title: Brunisol
+  Description:
+  - "Brunisols have enough horizon development to exclude them from Regosols but lack
+    sufficient development required for other soil orders. Brunisolic soils can be
+    viewed as a stage in an evolutionary sequence that begins with an unweathered
+    parent material (Regosolic soils) and ends with development of a \u201Cmature\u201D
+    soil (e.g., of the Podzolic or Luvisolic orders). Several horizon types are used
+    as diagnostic horizons for the Brunisolic order (although all must be at least
+    5 cm thick). The main horizon associated with the Brunisolic order is the Bm horizon
+    (a horizon that has undergone minimal pedogenic alteration), while others include
+    Bfj, Btj, and Bhjfj."
+  Images:
+  - {fileID: 0}
+  - {fileID: 0}
+  QuizQuestion: Hey, do you want to take a quiz?
+  QuizAnswers:
+  - Yes
+  - No
+  - Maybe
+  - I luv soil
