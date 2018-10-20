@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2904166b7f5b4054e8cc48d5a4c9d51d, type: 3}
   m_Name: 5Chernozem
   m_EditorClassIdentifier: 
+  MapPosition: {x: -0.167, y: 0.104, z: 0.0525}
   Title: Chernozem
   Description:
   - "Chernozemic soils have surface horizons darkened by organic matter accumulation.

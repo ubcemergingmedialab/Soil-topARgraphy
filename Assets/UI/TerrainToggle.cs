@@ -12,11 +12,11 @@ public class TerrainToggle : MonoBehaviour
 
     /// <summary>Heightmap terrain object</summary>
     public GameObject heightmap;
-    /// <summary>Text for `label` when heightmap mesh is onscreen</summary>
-    public string heightmapText = "HEIGHTMAP";
-
     /// <summary>Satellite terrain object</summary>
     public GameObject satellite;
+
+    /// <summary>Text for `label` when heightmap mesh is onscreen</summary>
+    public string heightmapText = "HEIGHTMAP";
     /// <summary>Text for `label` when satellite mesh is onscreen</summary>
     public string satelliteText = "SATELLITE";
 
@@ -24,9 +24,13 @@ public class TerrainToggle : MonoBehaviour
     /// <param name="change">changed toggle. if on, show satellite.</param>
     public void ToggleChanged(Toggle change)
     {
-        heightmap.SetActive(!change.isOn);
-        satellite.SetActive(change.isOn);
+        if (heightmap != null) {
+            heightmap.SetActive(!change.isOn);
+        }
+        if (satellite != null) {
+            satellite.SetActive(change.isOn);
+        }
 
-        label.text = change.isOn ? satelliteText : heightmapText;
+        label.text = (change.isOn ? satelliteText : heightmapText).ToUpper();
     }
 }
