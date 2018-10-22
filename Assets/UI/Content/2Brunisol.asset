@@ -28,7 +28,15 @@ MonoBehaviour:
   - {fileID: 0}
   QuizQuestion: Hey, do you want to take a quiz?
   QuizAnswers:
-  - Yes
-  - No
-  - Maybe
-  - I luv soil
+  - IsCorrect: 1
+    Answer: Yes
+    Hint: Yeees
+  - IsCorrect: 0
+    Answer: No
+    Hint: Aww why not?
+  - IsCorrect: 0
+    Answer: Maybe
+    Hint: please?
+  - IsCorrect: 1
+    Answer: I luv soil
+    Hint: CORRECT! A+ for you
