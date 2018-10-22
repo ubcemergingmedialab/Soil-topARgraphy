@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scene/Terrain.unity
-    guid: 9600c5f3796503e4784c213fec6d413c
-  - enabled: 0
-    path: Assets/Scene/Lite.unity
-    guid: 73d80e59c5342464ba3696b706cb9797
+    path: Assets/Scene/ImageTarget.unity
+    guid: ddc77a09ce7df9640a639bc040aff758
+  - enabled: 1
+    path: Assets/Scene/UI.unity
+    guid: 9b282c394448d1d4fa072f465d7a93c5
