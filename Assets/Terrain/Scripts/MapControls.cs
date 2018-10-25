@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using Vuforia;
 
 public interface CurrentMapTypeProvider {
@@ -16,6 +17,9 @@ public class MapControls : MonoBehaviour, ITrackableEventHandler {
     /// <summary>Satellite terrain object</summary>
     [SerializeField]
 	private HideMapboxMap satellite;
+
+	public UnityEvent OnTrack;
+	public UnityEvent OnHidden;
 
 	void Start() {
 		var trackableBehaviour = GetComponentInParent<TrackableBehaviour>();
@@ -49,6 +53,10 @@ public class MapControls : MonoBehaviour, ITrackableEventHandler {
 			case TrackableBehaviour.Status.TRACKED:
 			case TrackableBehaviour.Status.EXTENDED_TRACKED:
 				this.OnNextTick(SwapTo);
+				OnTrack.Invoke();
+				break;
+			case TrackableBehaviour.Status.NOT_FOUND:
+				OnHidden.Invoke();
 				break;
 		}
     }
