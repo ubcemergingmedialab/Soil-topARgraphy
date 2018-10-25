@@ -24,6 +24,7 @@ public class LinkMapToUi : MonoBehaviour {
         var uiScene = SceneManager.GetSceneByName(UiSceneName);
         Canvas infoCardParent = null;
         UiPanel infoCard = null;
+        Canvas toggleParent = null;
         TerrainToggle toggle = null;
         foreach (var gameObject in uiScene.GetRootGameObjects()) {
             switch (gameObject.tag) {
@@ -32,6 +33,7 @@ public class LinkMapToUi : MonoBehaviour {
                     infoCard = gameObject.GetComponentInChildren<UiPanel>();
                     break;
                 case "TerrainControls":
+                    toggleParent = gameObject.GetComponent<Canvas>();
                     toggle = gameObject.GetComponentInChildren<TerrainToggle>();
                     break;
             }
@@ -42,6 +44,10 @@ public class LinkMapToUi : MonoBehaviour {
         }
         if (infoCard) {
             Raycaster.OnHit.AddListener(infoCard.Display);
+        }
+        if (toggleParent) {
+            Controller.OnTrack.AddListener(() => toggleParent.enabled = true);
+            Controller.OnHidden.AddListener(() => toggleParent.enabled = false);
         }
         if (toggle) {
             toggle.OnChange.AddListener(Controller.SwapTo);
