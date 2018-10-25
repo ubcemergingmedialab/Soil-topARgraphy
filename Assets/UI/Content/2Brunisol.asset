@@ -24,8 +24,7 @@ MonoBehaviour:
     (a horizon that has undergone minimal pedogenic alteration), while others include
     Bfj, Btj, and Bhjfj."
   Images:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: ad288fa76e3518244937ea232f3dc829, type: 3}
   QuizQuestion: Hey, do you want to take a quiz?
   QuizAnswers:
   - IsCorrect: 1

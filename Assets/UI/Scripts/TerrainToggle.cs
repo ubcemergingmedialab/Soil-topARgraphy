@@ -28,6 +28,7 @@ public class TerrainToggle : MonoBehaviour, CurrentMapTypeProvider
 
     void Awake() {
         toggle = GetComponent<Toggle>();
+        UpdateLabel();
     }
 
     /// <summary>Callback for when the toggle is flipped.</summary>
@@ -35,6 +36,11 @@ public class TerrainToggle : MonoBehaviour, CurrentMapTypeProvider
     public void ToggleChanged()
     {
         OnChange.Invoke(CurrentMapType);
+        UpdateLabel();
+    }
+
+    private void UpdateLabel()
+    {
         label.text = CurrentMapType.ToFriendlyString().ToUpper();
     }
 }

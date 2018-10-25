@@ -27,8 +27,7 @@ MonoBehaviour:
     the Ae/Bnt sequence may be weakly expressed and those soils are classified into
     the Vertic Solonetz great group.
   Images:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 76645f91f383aa047b17043a7230d0a4, type: 3}
   QuizQuestion: Hey, do you want to take a quiz?
   QuizAnswers:
   - IsCorrect: 1

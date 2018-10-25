@@ -21,8 +21,7 @@ MonoBehaviour:
     mean annual soil temperatures > 0\xB0C but usually < 6\xB0C and experiences water
     deficits in most growing seasons."
   Images:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 4e2a00da80a27e2428f57b1b54767e3c, type: 3}
   QuizQuestion: Hey, do you want to take a quiz?
   QuizAnswers:
   - IsCorrect: 1
