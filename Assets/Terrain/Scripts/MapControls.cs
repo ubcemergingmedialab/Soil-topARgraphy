@@ -48,7 +48,7 @@ public class MapControls : MonoBehaviour, ITrackableEventHandler {
 			case TrackableBehaviour.Status.DETECTED:
 			case TrackableBehaviour.Status.TRACKED:
 			case TrackableBehaviour.Status.EXTENDED_TRACKED:
-				SwapTo();
+				this.OnNextTick(SwapTo);
 				break;
 		}
     }

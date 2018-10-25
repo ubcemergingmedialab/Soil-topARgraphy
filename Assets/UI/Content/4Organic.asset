@@ -21,8 +21,7 @@ MonoBehaviour:
     soils found in forested regions of Canada but they also occur in non-wetland positions
     in upland sites where leaf litter accumulates.
   Images:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 8a9254bf74ad25748aa51b7900bb31eb, type: 3}
   QuizQuestion: Hey, do you want to take a quiz?
   QuizAnswers:
   - IsCorrect: 1

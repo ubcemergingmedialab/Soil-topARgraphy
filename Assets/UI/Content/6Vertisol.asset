@@ -24,7 +24,6 @@ MonoBehaviour:
     The horizons in which slickenslides are Bss, Ckss, or Cgss."
   Images:
   - {fileID: 0}
-  - {fileID: 0}
   QuizQuestion: Hey, do you want to take a quiz?
   QuizAnswers:
   - IsCorrect: 1
