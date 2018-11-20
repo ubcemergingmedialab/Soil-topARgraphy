@@ -15,7 +15,7 @@ MonoBehaviour:
   ResultText: 
   FailedText: Incorrect, try again
   QuizOptions:
-  - optionText: 
+  - optionText: 1
     IsCorrect: 0
   - optionText: 
     IsCorrect: 0
