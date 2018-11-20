@@ -28,12 +28,12 @@ public class UiPanel : MonoBehaviour {
 	public void Display(UiContent content) {
 		TitleObject.text = content.Title.ToUpper();
 
-		CacheInstances(DescriptionPrefab, content.Description.Count, descriptionObjects);
+		PrefabList.CacheInstances(DescriptionPrefab, transform, content.Description.Count, descriptionObjects);
 		for (int i = 0; i < content.Description.Count; i++) {
 			descriptionObjects[i].text = content.Description[i];
 		}
 
-		CacheInstances(ImagePrefab, content.Images.Count, imageObjects);
+		PrefabList.CacheInstances(ImagePrefab, transform, content.Images.Count, imageObjects);
 		for (int i = 0; i < content.Images.Count; i++) {
 			var img = imageObjects[i].GetComponentInChildren<Image>();
 			var fitter = imageObjects[i].GetComponentInChildren<AspectRatioFitter>();
@@ -42,22 +42,6 @@ public class UiPanel : MonoBehaviour {
 			if (sprite) {
 				fitter.aspectRatio = sprite.rect.size.x / sprite.rect.size.y;
 				img.sprite = sprite;
-			}
-		}
-	}
-
-	private void CacheInstances<T>(T prefab, int amountWanted, List<T> cache) where T : Object {
-		if (amountWanted > cache.Count) {
-			while (cache.Count < amountWanted) {
-				T instance = (T) Instantiate(prefab, transform);
-				cache.Add(instance);
-			}
-		} else if (amountWanted < cache.Count) {
-			while (cache.Count > amountWanted) {
-				int last = cache.Count - 1;
-				T instance = cache[last];
-				cache.RemoveAt(last);
-				Destroy(instance);
 			}
 		}
 	}

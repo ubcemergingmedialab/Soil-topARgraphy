@@ -6,7 +6,9 @@ public class Quiz : MonoBehaviour {
 	/// <summary>Game object used to display a quiz question.</summary>
 	public Text QuestionObject;
 	/// <summary>Prefab used to display list of answers.</summary>
-    public Toggle MultipleChoicePrefab;
+    public Toggle OptionPrefab;
+
+    public Transform MultipleChoiceOptionContainer;
 
     public Button SubmitButton; 
     private Text question;
@@ -33,52 +35,44 @@ public class Quiz : MonoBehaviour {
         // Populate MultipleChoiceObjects
         
 
-		/*CacheInstances(AnswerPrefab, content.QuizAnswers.Count, answerObjects);
+		PrefabList.CacheInstances(
+            OptionPrefab, 
+            MultipleChoiceOptionContainer, 
+            (content as MultipleChoice).QuizOptions.Count, 
+            MultipleChoiceObjects
+        );
 		for (int i = 0; i < content.QuizAnswers.Count; i++) {
 			answerObjects[i].GetComponentInChildren<Text>().text = content.QuizAnswers[i].AnswerText;
-		}*/
-	}
-
-	private void CacheInstances<T>(T prefab, int amountWanted, List<T> cache) where T : Object {
-		if (amountWanted > cache.Count) {
-			while (cache.Count < amountWanted) {
-				T instance = (T) Instantiate(prefab, transform);
-				cache.Add(instance);
-			}
-		} else if (amountWanted < cache.Count) {
-			while (cache.Count > amountWanted) {
-				int last = cache.Count - 1;
-				T instance = cache[last];
-				cache.RemoveAt(last);
-				Destroy(instance);
-			}
 		}
 	}
 
     public void OnClickSubmitButton()
-    {
-        if (currContent is MultipleChoice) {
-            var mc = currContent as MultipleChoice;
-            bool allCorrect = true;
+    { 
+        if (SubmitButton) {
+            if (currContent is MultipleChoice) {
+                var mc = currContent as MultipleChoice;
+                bool allCorrect = true;
 
-            for (int i = 0; i < MultipleChoiceObjects.Count; i++) {
-                if (mc.QuizOptions[i].IsCorrect != MultipleChoiceObjects[i].isOn)
-                {
-                    allCorrect = false;
-                    break; 
+                for (int i = 0; i < MultipleChoiceObjects.Count; i++) {
+                    if (mc.QuizOptions[i].IsCorrect != MultipleChoiceObjects[i].isOn)
+                    {
+                        allCorrect = false;
+                        break; 
+                    }
                 }
+            
+                result.gameObject.SetActive(true);
+                if (allCorrect) {
+                    result.text = mc.ResultText;
+                } else {
+                    result.text = "Incorrect Answer, try again!";
+                }
+            } 
+            else if (currContent is ShortAnswer) {
+                var sa = currContent as ShortAnswer;
+                result.text = sa.ResultText;
+                result.gameObject.SetActive(true);
             }
-        
-            result.gameObject.SetActive(true);
-            if (allCorrect) {
-                result.text = mc.ResultText;
-            } else {
-                result.text = "Incorrect Answer, try again!";
-            }
-        } else if (currContent is ShortAnswer) {
-            var sa = currContent as ShortAnswer;
-            result.text = sa.ResultText;
-            result.gameObject.SetActive(true);
-        }
-    } 
+        } 
+    }
 }
