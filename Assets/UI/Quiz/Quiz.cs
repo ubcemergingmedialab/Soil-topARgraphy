@@ -6,9 +6,13 @@ public class Quiz : MonoBehaviour {
 	/// <summary>Game object used to display a quiz question.</summary>
 	public Text QuestionObject;
 	/// <summary>Prefab used to display list of answers.</summary>
-    public Button AnswerPrefab;
+    public Button MultipleChoicePrefab;
+
+    public Button SubmitButton; 
     private Text question;
-	private  List<Button> answerObjects = new List<Button>();
+
+    private Text result; 
+	private  List<Button> MultipleChoiceObjects = new List<Button>();
 
 	[SerializeField]
 	private QuizContent defaultContent = null;
@@ -26,10 +30,13 @@ public class Quiz : MonoBehaviour {
 		QuestionObject.text = content.Question.ToUpper();
         currContent = content;
 
-		CacheInstances(AnswerPrefab, content.QuizAnswers.Count, answerObjects);
+        // Populate MultipleChoiceObjects
+        
+
+		/*CacheInstances(AnswerPrefab, content.QuizAnswers.Count, answerObjects);
 		for (int i = 0; i < content.QuizAnswers.Count; i++) {
 			answerObjects[i].GetComponentInChildren<Text>().text = content.QuizAnswers[i].AnswerText;
-		}
+		}*/
 	}
 
 	private void CacheInstances<T>(T prefab, int amountWanted, List<T> cache) where T : Object {
@@ -48,13 +55,30 @@ public class Quiz : MonoBehaviour {
 		}
 	}
 
-    public void OnClick(Button button)
+    public void OnClickMultipleChoice(Button option)
     {
-        int index = answerObjects.FindIndex(btn => btn == button);
-        if (currContent.QuizAnswers[index].IsCorrect) {
-            // change state to AnswerText 
+        int index = MultipleChoiceObjects.FindIndex(btn => btn == option);
+        if (currContent is MultipleChoice) {
+            var mc = currContent as MultipleChoice;
+            if (mc.QuizOptions[index].IsCorrect) {
+                for (int i = 0; i < MultipleChoiceObjects.Count; i++) {
+                    MultipleChoiceObjects[i].gameObject.SetActive(false);
+                }
+            
+                result.text = mc.ResultText;
+                result.gameObject.SetActive(true);
+            }
         }
     }
 
- 
+    public void OnClickTextBox(Button submit)
+    {
+        int index = MultipleChoiceObjects.FindIndex(btn => btn == submit);
+        if (currContent is ShortAnswer) {
+            var sa = currContent as ShortAnswer;
+            result.text = sa.ResultText;
+            result.gameObject.SetActive(true);
+        }
+    }
+    
 }
