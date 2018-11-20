@@ -4,10 +4,9 @@ using UnityEngine;
 using UnityEngine.UI; 
 
 public class SharedQuizUi : MonoBehaviour {
-    public Text QuestionObject;
-    public Button SubmitButtonObject; 
+    public Text QuestionObject; 
     public Text ResultObject; 
-    public IQuizInput QuizInput;
+    private IQuizInput QuizInput;
 
     [SerializeField]
     private QuizContent currentContent = null; 
@@ -15,20 +14,16 @@ public class SharedQuizUi : MonoBehaviour {
     [ContextMenu("Refresh")]
     void Start()
     {
-        if (QuizInput == null) 
+        QuizInput = GetComponent<IQuizInput>();
+        if (QuizInput == null)
         {
-            QuizInput = GetComponent<IQuizInput>();
-            if (QuizInput == null)
-            {
-                throw new NullReferenceException("Missing QuizInput component");
-            }
+            throw new NullReferenceException("Missing QuizInput component");
         }
 
         if (currentContent != null) {
             Display(currentContent);
         }
     }
-
 
     /// <summary>Display the given content in the quiz panel</summary>
 	public void Display(QuizContent content) {
