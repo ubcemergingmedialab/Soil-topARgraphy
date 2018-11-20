@@ -19,8 +19,4 @@ public class UiContent : ScriptableObject {
 	/// <summary>Images show in the panel, below description text.</summary>
 	public List<Sprite> Images = new List<Sprite>();
 
-	/// <summary>Quiz question title shown on the quiz panel.</summary>
-	public string QuizQuestion;
-	/// <summary>Quiz options for the multiple choice quiz panel.</summary>
-	public List<QuizResponse> QuizAnswers = new List<QuizResponse>();
 }
