@@ -6,13 +6,13 @@ public class Quiz : MonoBehaviour {
 	/// <summary>Game object used to display a quiz question.</summary>
 	public Text QuestionObject;
 	/// <summary>Prefab used to display list of answers.</summary>
-    public Button MultipleChoicePrefab;
+    public Toggle MultipleChoicePrefab;
 
     public Button SubmitButton; 
     private Text question;
 
     private Text result; 
-	private  List<Button> MultipleChoiceObjects = new List<Button>();
+	private  List<Toggle> MultipleChoiceObjects = new List<Toggle>();
 
 	[SerializeField]
 	private QuizContent defaultContent = null;
@@ -55,30 +55,30 @@ public class Quiz : MonoBehaviour {
 		}
 	}
 
-    public void OnClickMultipleChoice(Button option)
+    public void OnClickSubmitButton()
     {
-        int index = MultipleChoiceObjects.FindIndex(btn => btn == option);
         if (currContent is MultipleChoice) {
             var mc = currContent as MultipleChoice;
-            if (mc.QuizOptions[index].IsCorrect) {
-                for (int i = 0; i < MultipleChoiceObjects.Count; i++) {
-                    MultipleChoiceObjects[i].gameObject.SetActive(false);
-                }
-            
-                result.text = mc.ResultText;
-                result.gameObject.SetActive(true);
-            }
-        }
-    }
+            bool allCorrect = true;
 
-    public void OnClickTextBox(Button submit)
-    {
-        int index = MultipleChoiceObjects.FindIndex(btn => btn == submit);
-        if (currContent is ShortAnswer) {
+            for (int i = 0; i < MultipleChoiceObjects.Count; i++) {
+                if (mc.QuizOptions[i].IsCorrect != MultipleChoiceObjects[i].isOn)
+                {
+                    allCorrect = false;
+                    break; 
+                }
+            }
+        
+            result.gameObject.SetActive(true);
+            if (allCorrect) {
+                result.text = mc.ResultText;
+            } else {
+                result.text = "Incorrect Answer, try again!";
+            }
+        } else if (currContent is ShortAnswer) {
             var sa = currContent as ShortAnswer;
             result.text = sa.ResultText;
             result.gameObject.SetActive(true);
         }
-    }
-    
+    } 
 }
