@@ -24,9 +24,9 @@ MonoBehaviour:
   Images:
   - {fileID: 21300000, guid: bdd14fb02fe043643a656fcc49338bcc, type: 3}
   quizzes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 57836da4d4ecc6b40a550097029e9132, type: 2}
+  - {fileID: 11400000, guid: b928e28afacdeea498e6a4e35e6bd4b7, type: 2}
+  - {fileID: 11400000, guid: 74c84a25d67121a449f21e2a14615e8e, type: 2}
+  - {fileID: 11400000, guid: fa3b6475fa4ec43438a07346f533a792, type: 2}
+  - {fileID: 11400000, guid: 8a5933f50f6691342948a8f024b75d36, type: 2}
+  - {fileID: 11400000, guid: 2674b17bb8e94d040be2143d1b73ad62, type: 2}

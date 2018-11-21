@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90323befe15504143b7a79ffe5b7a399, type: 3}
+  m_Name: Q6
+  m_EditorClassIdentifier: 
+  Question: 6. What roles does topography play in a formation of Podzols?
+  ResultText: Topography directly modifies soil water content & temperature, which
+    then impacts physical and chemical weathering. Generally, weathering processes
+    are the fastest in wet & warm regions, where the release of ions such as Fe and
+    Al from crystalline structures is relatively fast (fast in geological terms, since
+    this can take decades or hundreds of years). In wetter regions, these released
+    Fe and Al oxides and hydroxides then are moving through soil profile and if they
+    accumulate in B horizons a Bf horizon will form and that also means that a Podzol
+    will form.
+  FailedText: Incorrect, try again
