@@ -23,17 +23,10 @@ MonoBehaviour:
     to black B horizon with an abrupt upper boundary.
   Images:
   - {fileID: 21300000, guid: bdd14fb02fe043643a656fcc49338bcc, type: 3}
-  QuizQuestion: Hey, do you want to take a quiz?
-  QuizAnswers:
-  - IsCorrect: 1
-    Answer: Yes
-    Hint: Yeees
-  - IsCorrect: 0
-    Answer: No
-    Hint: Aww why not?
-  - IsCorrect: 0
-    Answer: Maybe
-    Hint: please?
-  - IsCorrect: 1
-    Answer: I luv soil
-    Hint: CORRECT! A+ for you
+  quizzes:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
