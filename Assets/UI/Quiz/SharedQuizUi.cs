@@ -14,6 +14,7 @@ public class SharedQuizUi : MonoBehaviour {
     [ContextMenu("Refresh")]
     void Start()
     {
+        ResultObject.gameObject.SetActive(false);
         QuizInput = GetComponent<IQuizInput>();
         if (QuizInput == null)
         {
