@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Name: MultipleChoice
   m_EditorClassIdentifier: 
   Question: WHEEE!
-  ResultText: 
+  ResultText: 'mc test result '
   FailedText: Incorrect, try again
   QuizOptions:
-  - optionText: 1
+  - optionText: MC1
+    IsCorrect: 1
+  - optionText: MC2
+    IsCorrect: 1
+  - optionText: MC3
     IsCorrect: 0
-  - optionText: 
-    IsCorrect: 0
-  - optionText: 
-    IsCorrect: 0
-  - optionText: 
+  - optionText: MC4
     IsCorrect: 0

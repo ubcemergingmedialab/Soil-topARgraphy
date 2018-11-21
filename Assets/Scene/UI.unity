@@ -1658,8 +1658,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: OnClickSubmitButton
+      - m_Target: {fileID: 1739862096}
+        m_MethodName: HandleSubmit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3788,7 +3788,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Your answer is correct! YAY
+  m_Text: 
 --- !u!222 &1010553426
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4411,8 +4411,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: OnClickSubmitButton
+      - m_Target: {fileID: 910693858}
+        m_MethodName: HandleSubmit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5486,7 +5486,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QuestionObject: {fileID: 92220176}
   ResultObject: {fileID: 1010553425}
-  currentContent: {fileID: 11400000, guid: f207fea2b362ec342980328bda5725dc, type: 2}
+  currentContent: {fileID: 11400000, guid: c0897fcacd9d54f4194f29dfd8fdfaee, type: 2}
 --- !u!114 &1739862097
 MonoBehaviour:
   m_ObjectHideFlags: 0

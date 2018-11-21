@@ -35,7 +35,7 @@ public class SharedQuizUi : MonoBehaviour {
 	}
 
     /// <summary>Handle submitting an answer</summary>
-	public void HandleAnswer() {
+	public void HandleSubmit() {
         if (currentContent == null) return;
         ResultObject.gameObject.SetActive(true);
 
