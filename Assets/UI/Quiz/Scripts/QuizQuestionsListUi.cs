@@ -5,8 +5,6 @@ using UnityEngine.UI;
 public class QuizQuestionsListUi : MonoBehaviour {
     public GameObject MCQuestionPrefab;
     public GameObject ShortAnswerQuestionPrefab;  
-
-    private  List<QuizContent> allQuizzes = new List<QuizContent>();
  
     public void Display(List<QuizContent> loQuizcontent) {
         // Destroy all children 
