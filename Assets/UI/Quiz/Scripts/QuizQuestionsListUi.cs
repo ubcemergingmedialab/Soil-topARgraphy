@@ -5,11 +5,21 @@ using UnityEngine.UI;
 public class QuizQuestionsListUi : MonoBehaviour {
     public GameObject MCQuestionPrefab;
     public GameObject ShortAnswerQuestionPrefab;  
+
+    [SerializeField]
+	private UiContent defaultContent = null;
+
+	[ContextMenu("Refresh")]
+	void Start() {
+		if (defaultContent != null) {
+			Display(defaultContent.quizzes);
+		}
+	}
  
     public void Display(List<QuizContent> loQuizcontent) {
         // Destroy all children 
         foreach (Transform child in transform) {
-            Object.Destroy(child);
+            Destroy(child.gameObject);
         }
 
         // Make new children
@@ -22,7 +32,9 @@ public class QuizQuestionsListUi : MonoBehaviour {
             } else {
                 continue;
             }
-            Object.Instantiate(prefab, transform); 
+            var quizGameObject = Instantiate(prefab, transform); 
+            var sharedQuiz = quizGameObject.GetComponent<SharedQuizUi>();
+            sharedQuiz.Display(content);
 		}
     }
 }
