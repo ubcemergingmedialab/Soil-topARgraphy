@@ -22,17 +22,9 @@ MonoBehaviour:
     deficits in most growing seasons."
   Images:
   - {fileID: 21300000, guid: 4e2a00da80a27e2428f57b1b54767e3c, type: 3}
-  QuizQuestion: Hey, do you want to take a quiz?
-  QuizAnswers:
-  - IsCorrect: 1
-    Answer: Yes
-    Hint: Yeees
-  - IsCorrect: 0
-    Answer: No
-    Hint: Aww why not?
-  - IsCorrect: 0
-    Answer: Maybe
-    Hint: please?
-  - IsCorrect: 1
-    Answer: I luv soil
-    Hint: CORRECT! A+ for you
+  quizzes:
+  - {fileID: 11400000, guid: 7a95a3b458afb734890d901955c8c279, type: 2}
+  - {fileID: 11400000, guid: b6555ffb164e90841ab1d8971330810c, type: 2}
+  - {fileID: 11400000, guid: 3010e6179c47f1843a877106eab6556a, type: 2}
+  - {fileID: 11400000, guid: d6a10e19851ec11498d6122336c0a6d3, type: 2}
+  - {fileID: 11400000, guid: 6e367eb06ffa42e4db0ce5518bc4c0e2, type: 2}

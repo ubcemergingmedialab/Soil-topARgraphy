@@ -24,17 +24,10 @@ MonoBehaviour:
     The horizons in which slickenslides are Bss, Ckss, or Cgss."
   Images:
   - {fileID: 21300000, guid: 3e5a0b52071321e4cbae7466875085a5, type: 3}
-  QuizQuestion: Hey, do you want to take a quiz?
-  QuizAnswers:
-  - IsCorrect: 1
-    Answer: Yes
-    Hint: Yeees
-  - IsCorrect: 0
-    Answer: No
-    Hint: Aww why not?
-  - IsCorrect: 0
-    Answer: Maybe
-    Hint: please?
-  - IsCorrect: 1
-    Answer: I luv soil
-    Hint: CORRECT! A+ for you
+  quizzes:
+  - {fileID: 11400000, guid: 3d0a6e7784e4f5f46bd972b76e9bb061, type: 2}
+  - {fileID: 11400000, guid: d23361fc2d2cb494e935a15a67a93ef5, type: 2}
+  - {fileID: 11400000, guid: 2fa03a8306a13b948a6eca960a022710, type: 2}
+  - {fileID: 11400000, guid: 9fd35d3d1668b394db143d513560a0cd, type: 2}
+  - {fileID: 11400000, guid: 2642adec908a7e64a8f6a770e8c79c34, type: 2}
+  - {fileID: 11400000, guid: ce5c92c915a583947a3049127d84fdf6, type: 2}

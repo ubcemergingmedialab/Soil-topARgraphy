@@ -28,17 +28,9 @@ MonoBehaviour:
     the Vertic Solonetz great group.
   Images:
   - {fileID: 21300000, guid: 76645f91f383aa047b17043a7230d0a4, type: 3}
-  QuizQuestion: Hey, do you want to take a quiz?
-  QuizAnswers:
-  - IsCorrect: 1
-    Answer: Yes
-    Hint: Yeees
-  - IsCorrect: 0
-    Answer: No
-    Hint: Aww why not?
-  - IsCorrect: 0
-    Answer: Maybe
-    Hint: please?
-  - IsCorrect: 1
-    Answer: I luv soil
-    Hint: CORRECT! A+ for you
+  quizzes:
+  - {fileID: 11400000, guid: 26bb07fe567b24e48bcf1d7cd9297689, type: 2}
+  - {fileID: 11400000, guid: 399ac1d77c01f8147ab68906caca310d, type: 2}
+  - {fileID: 11400000, guid: 2d05e5cc2bde13547867e728b4f51a4c, type: 2}
+  - {fileID: 11400000, guid: 22d235b6c86ee3b41a17643a305c3e08, type: 2}
+  - {fileID: 11400000, guid: ce2b147f4fdda834cbbf8f1f77f2417d, type: 2}

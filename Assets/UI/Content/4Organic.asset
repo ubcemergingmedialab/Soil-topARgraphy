@@ -22,17 +22,8 @@ MonoBehaviour:
     in upland sites where leaf litter accumulates.
   Images:
   - {fileID: 21300000, guid: 8a9254bf74ad25748aa51b7900bb31eb, type: 3}
-  QuizQuestion: Hey, do you want to take a quiz?
-  QuizAnswers:
-  - IsCorrect: 1
-    Answer: Yes
-    Hint: Yeees
-  - IsCorrect: 0
-    Answer: No
-    Hint: Aww why not?
-  - IsCorrect: 0
-    Answer: Maybe
-    Hint: please?
-  - IsCorrect: 1
-    Answer: I luv soil
-    Hint: CORRECT! A+ for you
+  quizzes:
+  - {fileID: 11400000, guid: e77159ed0f5ce6e4da89fe7689f76b39, type: 2}
+  - {fileID: 11400000, guid: c332b3243df83874d9c82ae130a025fc, type: 2}
+  - {fileID: 11400000, guid: edcc5f115ad0a4d459f7fdaa66553385, type: 2}
+  - {fileID: 11400000, guid: c5829969fe2f5c24387b7877c2dd7523, type: 2}
