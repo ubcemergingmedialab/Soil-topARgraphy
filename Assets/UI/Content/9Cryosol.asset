@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: 9Cryosol
   m_EditorClassIdentifier: 
   MapPosition: {x: 0.5216, y: 0.007, z: -0.3887}
+  IsBonus: 1
   Title: Cryosol
   Description:
   - "Soils of this order have permafrost either within 1 m of the surface or within

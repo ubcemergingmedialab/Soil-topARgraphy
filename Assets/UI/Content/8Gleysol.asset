@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: 8Gleysol
   m_EditorClassIdentifier: 
   MapPosition: {x: 0.24, y: 0.007, z: -0.3466}
+  IsBonus: 1
   Title: Gleysol
   Description:
   - Gleysols are soils that have undergone prolonged periods of intermittent or continuous

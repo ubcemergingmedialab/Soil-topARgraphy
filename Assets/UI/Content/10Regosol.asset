@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: 10Regosol
   m_EditorClassIdentifier: 
   MapPosition: {x: 0.153, y: 0.007, z: 0.241}
+  IsBonus: 1
   Title: Regosol
   Description:
   - Regosols are weakly developed soils to meet the classification requirements of

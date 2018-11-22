@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: General
   m_EditorClassIdentifier: 
   MapPosition: {x: 0.022, y: 0.007, z: -0.148}
+  IsBonus: 1
   Title: General
   Description: []
   Images: []

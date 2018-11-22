@@ -4,6 +4,7 @@ using UnityEngine;
 public class BuildFlags : MonoBehaviour
 {
     public FlagPanel FlagPrefab;
+    public FlagPanel BonusPrefab;
     public List<UiContent> Flags = new List<UiContent>();
 
     void Start() {
@@ -15,7 +16,8 @@ public class BuildFlags : MonoBehaviour
 
     public void Build() {
         foreach (var content in Flags) {
-            var panel = (FlagPanel) Instantiate(FlagPrefab, transform);
+            var prefab = content.IsBonus ? BonusPrefab : FlagPrefab;
+            var panel = (FlagPanel) Instantiate(prefab, transform);
             panel.transform.localPosition = content.MapPosition;
             panel.Content = content;
         }

@@ -327,6 +327,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FlagPrefab: {fileID: 114294927956451652, guid: 14241c95dc1dfef46a3c7bd283136054,
     type: 2}
+  BonusPrefab: {fileID: 114271739536805702, guid: 32cc661e6be87bd4ea7d7f41f100c6fd,
+    type: 2}
   Flags:
   - {fileID: 11400000, guid: 6e325161c9a632a43bc82df790d03bc0, type: 2}
   - {fileID: 11400000, guid: 6b9920a32a3c16142a4b1a21f32f5209, type: 2}
