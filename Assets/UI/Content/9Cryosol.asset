@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2904166b7f5b4054e8cc48d5a4c9d51d, type: 3}
+  m_Name: 9Cryosol
+  m_EditorClassIdentifier: 
+  MapPosition: {x: 0.5216, y: 0.007, z: -0.3887}
+  Title: Cryosol
+  Description:
+  - "Soils of this order have permafrost either within 1 m of the surface or within
+    2 m if the pedon is strongly cryoturbated in the active layer.  They form in regions
+    that have a mean annual soil temperature below 0\xB0C. Cryosols occupy much of
+    the northern third of Canada."
+  Images: []
+  quizzes:
+  - {fileID: 11400000, guid: c9fbf2e52fddcda4b9d0e776f666884f, type: 2}
+  - {fileID: 11400000, guid: caa9592e29c94c8489fe7492e4a6fb77, type: 2}
+  - {fileID: 11400000, guid: e960895042dd4354186fb39e01801e94, type: 2}
+  - {fileID: 11400000, guid: ce880dc0f4bf61048b8ca6303d5ad5a9, type: 2}
+  - {fileID: 11400000, guid: 769f0868fcaa2814594974e7e24b86a4, type: 2}

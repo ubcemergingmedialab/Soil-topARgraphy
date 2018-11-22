@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2904166b7f5b4054e8cc48d5a4c9d51d, type: 3}
+  m_Name: 8Gleysol
+  m_EditorClassIdentifier: 
+  MapPosition: {x: 0.24, y: 0.007, z: -0.3466}
+  Title: Gleysol
+  Description:
+  - Gleysols are soils that have undergone prolonged periods of intermittent or continuous
+    saturation with water causing reducing conditions during their genesis. This results
+    in characteristic colours and mottling. Water saturation leads to depletion of
+    oxygen in the soil and cause the transformation of metals such as iron. When oxygen
+    is present, iron is oxidized and has a reddish colour, while when oxygen becomes
+    depleted (due to water saturation) the iron is reduced and takes on a blue-grey
+    hue and this dominates the colour of the horizon. The diagnostic criteria for
+    Gleysolic soils in the presence of well-developed gley features within 50 cm of
+    the soil surface. Horizons with these features are labelled with the subscript
+    g (e.g., Bg, Aeg, Cg)
+  Images: []
+  quizzes:
+  - {fileID: 11400000, guid: e2948a36269acef49bf9f8cdf11f9649, type: 2}
+  - {fileID: 11400000, guid: 980d6aa56625a1547883412cb30f48a5, type: 2}
+  - {fileID: 11400000, guid: d9fab5c728b31dc489751caa9bdf4508, type: 2}
+  - {fileID: 11400000, guid: 03dd8d49bbcddc64b8d24d7fff53325e, type: 2}
+  - {fileID: 11400000, guid: 25ff265d4cb51b74ba70b4d24c111b6a, type: 2}

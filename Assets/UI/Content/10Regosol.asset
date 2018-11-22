@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2904166b7f5b4054e8cc48d5a4c9d51d, type: 3}
+  m_Name: 10Regosol
+  m_EditorClassIdentifier: 
+  MapPosition: {x: 0, y: 0, z: 0}
+  Title: Regosol
+  Description:
+  - Regosols are weakly developed soils to meet the classification requirements of
+    other soil orders. They lack a recognizable B horizon (i.e., B horizon is less
+    than 5 cm thick). Soils of the Regosolic order are most commonly associated with
+    landforms where the land surface is (or has recently been) unstable. Because of
+    the unstable surface, the soil has had little time to develop. Consequently, soil
+    horizons are very weakly expressed if present at all.
+  Images: []
+  quizzes:
+  - {fileID: 11400000, guid: e54e185d6f968be4ab22422096cb030e, type: 2}
+  - {fileID: 11400000, guid: 6a571518f78fec449b15f530c61ea1df, type: 2}
+  - {fileID: 11400000, guid: ce59f0fc1a6fdd24cb0b8d036bb3a382, type: 2}
+  - {fileID: 11400000, guid: fcd88482220938844a76f0fe9a4d1c14, type: 2}
