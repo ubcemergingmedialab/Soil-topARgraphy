@@ -85,7 +85,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1094283657174254}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.04, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4366074591233614}
@@ -192,6 +192,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heightmap: {fileID: 23177886004207678}
   satellite: {fileID: 114581941214708138}
+  OnTrack:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnHidden:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114581941214708138
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -325,6 +335,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e00ebe2ed7d74124cb961dc474d93336, type: 2}
   - {fileID: 11400000, guid: 4dc2af5c2a9fa284798236f66f67153d, type: 2}
   - {fileID: 11400000, guid: d2f55f3dfe42eaf42b5b80a9bc141690, type: 2}
+  - {fileID: 11400000, guid: b735888b44ad2e34b90388aa4518a545, type: 2}
+  - {fileID: 11400000, guid: c86f49874efe500468ebdb42df6ccb75, type: 2}
+  - {fileID: 11400000, guid: 9499dfa4460b81848a489f7152345518, type: 2}
+  - {fileID: 11400000, guid: cfb0116d2d7059c4cb74d5eafa1a8a9d, type: 2}
 --- !u!114 &114972207563350448
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -16,7 +16,7 @@ public class BuildFlags : MonoBehaviour
     public void Build() {
         foreach (var content in Flags) {
             var panel = (FlagPanel) Instantiate(FlagPrefab, transform);
-            panel.transform.position = content.MapPosition;
+            panel.transform.localPosition = content.MapPosition;
             panel.Content = content;
         }
     }

@@ -120,11 +120,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114919271115927294, guid: 19dcda410b3a3914cbbbcdb79cf9e67a,
-        type: 2}
-      propertyPath: Flags.Array.size
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 4232966343073880, guid: 19dcda410b3a3914cbbbcdb79cf9e67a, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -162,30 +157,6 @@ Prefab:
       propertyPath: _terrain._layerProperty.requiredOptions.baseMaterial
       value: 
       objectReference: {fileID: 2100000, guid: b9f23e9bce724fa4daac57ecded470b8, type: 2}
-    - target: {fileID: 114919271115927294, guid: 19dcda410b3a3914cbbbcdb79cf9e67a,
-        type: 2}
-      propertyPath: Flags.Array.data[7]
-      value: 
-      objectReference: {fileID: 11400000, guid: b735888b44ad2e34b90388aa4518a545,
-        type: 2}
-    - target: {fileID: 114919271115927294, guid: 19dcda410b3a3914cbbbcdb79cf9e67a,
-        type: 2}
-      propertyPath: Flags.Array.data[8]
-      value: 
-      objectReference: {fileID: 11400000, guid: c86f49874efe500468ebdb42df6ccb75,
-        type: 2}
-    - target: {fileID: 114919271115927294, guid: 19dcda410b3a3914cbbbcdb79cf9e67a,
-        type: 2}
-      propertyPath: Flags.Array.data[9]
-      value: 
-      objectReference: {fileID: 11400000, guid: 9499dfa4460b81848a489f7152345518,
-        type: 2}
-    - target: {fileID: 114919271115927294, guid: 19dcda410b3a3914cbbbcdb79cf9e67a,
-        type: 2}
-      propertyPath: Flags.Array.data[10]
-      value: 
-      objectReference: {fileID: 11400000, guid: cfb0116d2d7059c4cb74d5eafa1a8a9d,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19dcda410b3a3914cbbbcdb79cf9e67a, type: 2}
   m_IsPrefabParent: 0

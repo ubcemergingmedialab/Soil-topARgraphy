@@ -32,7 +32,7 @@ public class LinkMapToUi : MonoBehaviour {
                 case "InfoCard":
                     infoCardParent = gameObject.GetComponent<Canvas>();
                     infoCard = gameObject.GetComponentInChildren<UiPanel>();
-                    quizList = gameObject.GetComponentInChildren<QuizQuestionsListUi>();
+                    quizList = gameObject.GetComponentInChildren<QuizQuestionsListUi>(includeInactive: true);
                     break;
                 case "TerrainControls":
                     toggleParent = gameObject.GetComponent<Canvas>();
