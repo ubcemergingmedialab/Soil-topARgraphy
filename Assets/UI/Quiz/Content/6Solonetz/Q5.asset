@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90323befe15504143b7a79ffe5b7a399, type: 3}
+  m_Name: Q5
+  m_EditorClassIdentifier: 
+  Question: 5.What roles does topography play in a formation of Solonetz?
+  ResultText: Topography does not have a pronounced, direct role in development of
+    Solonetz. It indirectly may impact weathering of soil minerals and release of
+    sodium ions from crystalline structure; and once those accumulate in B horizon,
+    Bn is formed and so is the Solonetz.
+  FailedText: Incorrect, try again

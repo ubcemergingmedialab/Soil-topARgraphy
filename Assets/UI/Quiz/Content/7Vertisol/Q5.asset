@@ -9,19 +9,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86ec3933712a83c4ca5d42786597a23f, type: 3}
-  m_Name: Q3
+  m_Name: Q5
   m_EditorClassIdentifier: 
-  Question: 3.Which of the following are orders of the Canadian System of Soil Classification?
+  Question: 5.What are some clues that can help us recognize the diagnostic horizon
+    of the Vertisolic order?
   ResultText: 
   FailedText: Incorrect, try again
   QuizOptions:
-  - optionText: Podzol
+  - optionText: Salt crust on surface of aggregates
+    IsCorrect: 0
+  - optionText: Wedge aggregates
     IsCorrect: 1
-  - optionText: Oxisol
-    IsCorrect: 0
-  - optionText: Loess
-    IsCorrect: 0
-  - optionText: Chernozem
+  - optionText: Fine texture
     IsCorrect: 1
-  - optionText: Sandy loam
+  - optionText: Coarse texture
     IsCorrect: 0
+  - optionText: Presence of cracks on soil surface, when soil is dry
+    IsCorrect: 1
