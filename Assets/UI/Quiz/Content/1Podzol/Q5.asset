@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86ec3933712a83c4ca5d42786597a23f, type: 3}
   m_Name: Q5
   m_EditorClassIdentifier: 
-  Question: 5.Which of the following are orders of the Canadian System of Soil Classification?
+  Question: 5.Which of the following *are* orders of the Canadian System of Soil Classification?
   ResultText: 
   FailedText: Incorrect, try again
   QuizOptions:

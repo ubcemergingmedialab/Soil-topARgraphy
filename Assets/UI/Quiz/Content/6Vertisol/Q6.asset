@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Question: 6.What roles does topography play in a formation of Vertisols?
   ResultText: 'Topography does not have a pronounced, direct role in development of
-    Vertisols. It indirectly may impact weathering of primary minerals that leads
+    Vertisols. It *indirectly* may impact weathering of primary minerals that leads
     to formation of clay minerals of the smectite group, needed to be present in a
     soil to be classified as Vertisol. '
   FailedText: Incorrect, try again

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Question: 6.What roles does topography play in a formation of Luvisols?
   ResultText: Topography does not have a pronounced, direct role in development of
-    Luvisols. It indirectly may impact water movement through a soil profile, which
+    Luvisols. It *indirectly* may impact water movement through a soil profile, which
     is needed for movement of clay particles and eventually their accumulation within
     the Bt horizon.
   FailedText: Incorrect, try again

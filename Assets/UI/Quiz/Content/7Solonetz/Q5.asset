@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Question: 5.What roles does topography play in a formation of Solonetz?
   ResultText: Topography does not have a pronounced, direct role in development of
-    Solonetz. It indirectly may impact weathering of soil minerals and release of
+    Solonetz. It *indirectly* may impact weathering of soil minerals and release of
     sodium ions from crystalline structure; and once those accumulate in B horizon,
     Bn is formed and so is the Solonetz.
   FailedText: Incorrect, try again

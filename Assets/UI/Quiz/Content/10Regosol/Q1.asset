@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: Q1
   m_EditorClassIdentifier: 
   Question: 1.What are the diagnostic horizons of the Regosolic order?
-  ResultText: "There are no diagnostic horizons for this order \u2026. Regosols are
-    characterized by the absence of B horizon."
+  ResultText: "There are *no* diagnostic horizons for this order \u2026. Regosols
+    are characterized by the absence of B horizon."
   FailedText: Incorrect, try again

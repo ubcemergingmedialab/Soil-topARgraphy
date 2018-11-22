@@ -17,13 +17,13 @@ MonoBehaviour:
   FailedText: Incorrect, try again
   QuizOptions:
   - optionText: Slope
-    IsCorrect: 0
+    IsCorrect: 1
   - optionText: Structure
     IsCorrect: 0
   - optionText: Aspect
-    IsCorrect: 0
+    IsCorrect: 1
   - optionText: Elevation
-    IsCorrect: 0
+    IsCorrect: 1
   - optionText: 'Texture '
     IsCorrect: 0
   - optionText: Cryoturbation

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: Q4
   m_EditorClassIdentifier: 
   Question: '4.Are Chernozems typical soils in forest ecosystems? '
-  ResultText: 'Chernozems are typical soils of grassland ecosystems, which occur in
-    dry (arid & semi-arid) regions, dominated by grass species. Grasses are providing
+  ResultText: 'Chernozems are typical soils of *grassland* ecosystems, which occur
+    in dry (arid & semi-arid) regions, dominated by grass species. Grasses are providing
     abundant organic residues, and these residues tend to accumulate in these dry
     ecosystems, which leads to accumulation of organic matter in soil (typical soil
     formation process of Chernozems) '
