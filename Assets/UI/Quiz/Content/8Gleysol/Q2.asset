@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90323befe15504143b7a79ffe5b7a399, type: 3}
+  m_Name: Q2
+  m_EditorClassIdentifier: 
+  Question: 2.What is the most dominant soil formation process occurring in the Gleysolic
+    order?
+  ResultText: Gleying process, which represents succession of oxidizing and reducing
+    conditions within the profile, due to fluctuating water table (which leads to
+    formation of Bg and/or Cg horizons)
+  FailedText: Incorrect, try again

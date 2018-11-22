@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86ec3933712a83c4ca5d42786597a23f, type: 3}
+  m_Name: Q3
+  m_EditorClassIdentifier: 
+  Question: 3.What are some clues that can help us recognize the diagnostic horizon
+    of the Regosolic order?
+  ResultText: 
+  FailedText: Incorrect, try again
+  QuizOptions:
+  - optionText: Wedge aggregates
+    IsCorrect: 0
+  - optionText: B horizon is not present
+    IsCorrect: 1
+  - optionText: Presence of one or more buried Ah horizons within the profile
+    IsCorrect: 1
+  - optionText: Presence of mottles
+    IsCorrect: 0
