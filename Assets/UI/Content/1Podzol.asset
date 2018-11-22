@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2904166b7f5b4054e8cc48d5a4c9d51d, type: 3}
   m_Name: 1Podzol
   m_EditorClassIdentifier: 
-  MapPosition: {x: -0.284, y: 0.058, z: 0.3515}
+  MapPosition: {x: -0.284, y: 0.058, z: 0.3247}
   Title: Podzol
   Description:
   - Podzolic soils are forested soils found primarily on sandy deposits in ecozones

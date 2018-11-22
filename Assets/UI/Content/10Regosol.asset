@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2904166b7f5b4054e8cc48d5a4c9d51d, type: 3}
   m_Name: 10Regosol
   m_EditorClassIdentifier: 
-  MapPosition: {x: 0, y: 0, z: 0}
+  MapPosition: {x: 0.153, y: 0.007, z: 0.241}
   Title: Regosol
   Description:
   - Regosols are weakly developed soils to meet the classification requirements of
