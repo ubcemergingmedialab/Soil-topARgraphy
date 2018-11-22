@@ -23,6 +23,7 @@ public class LinkMapToUi : MonoBehaviour {
 
         var uiScene = SceneManager.GetSceneByName(UiSceneName);
         Canvas infoCardParent = null;
+        PanelPager infoCardPager = null;
         UiPanel infoCard = null;
         QuizQuestionsListUi quizList = null;
         Canvas toggleParent = null;
@@ -31,6 +32,7 @@ public class LinkMapToUi : MonoBehaviour {
             switch (gameObject.tag) {
                 case "InfoCard":
                     infoCardParent = gameObject.GetComponent<Canvas>();
+                    infoCardPager = gameObject.GetComponent<PanelPager>();
                     infoCard = gameObject.GetComponentInChildren<UiPanel>();
                     quizList = gameObject.GetComponentInChildren<QuizQuestionsListUi>(includeInactive: true);
                     break;
@@ -42,7 +44,14 @@ public class LinkMapToUi : MonoBehaviour {
         }
 
         if (infoCardParent) {
-            Raycaster.OnHit.AddListener((_) => infoCardParent.enabled = true);
+            Raycaster.OnHit.AddListener((_) => {
+                infoCardPager.Reset();
+                infoCardParent.enabled = true;
+                Raycaster.enabled = false;
+            });
+            
+            var closeButton = infoCardPager.CloseButton;
+            closeButton.onClick.AddListener(() => Raycaster.enabled = true);
         }
         if (infoCard) {
             Raycaster.OnHit.AddListener(infoCard.Display);

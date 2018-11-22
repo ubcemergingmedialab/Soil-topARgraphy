@@ -109,4 +109,9 @@ public class PanelPager : MonoBehaviour
     {
         ChangeActivePanel(currentIndex + 1);
     }
+
+    public void Reset()
+    {
+        ChangeActivePanel(0);
+    }
 }
