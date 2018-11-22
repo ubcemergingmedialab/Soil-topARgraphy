@@ -36,3 +36,4 @@ sysinfo.txt
 *.unitypackage
 
 !Assets/**/Build
+!Assets/**/*.obj
