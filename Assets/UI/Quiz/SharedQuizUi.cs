@@ -14,8 +14,6 @@ public class SharedQuizUi : MonoBehaviour {
     [ContextMenu("Refresh")]
     void Start()
     {
-        ResultObject.gameObject.SetActive(false);
-
         if (currentContent != null) {
             Display(currentContent);
         }
@@ -34,18 +32,21 @@ public class SharedQuizUi : MonoBehaviour {
             }
         }
 
+        ResultObject.text = currentContent.ResultText;
+        ResultObject.color -= new Color(0, 0, 0, 1);
         QuizInput.Display(content);
 	}
 
     /// <summary>Handle submitting an answer</summary>
 	public void HandleSubmit() {
         if (currentContent == null) return;
-        ResultObject.gameObject.SetActive(true);
-
+        
         var answerIsCorrect = QuizInput.CheckAnswer(currentContent);
         if (answerIsCorrect) {
+            ResultObject.color += new Color(0, 0, 0, 1);
             ResultObject.text = currentContent.ResultText;
         } else {
+            ResultObject.color += new Color(0, 0, 0, 1);
             ResultObject.text = currentContent.FailedText;
         }
 	}
