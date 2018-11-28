@@ -49,13 +49,14 @@ public class MapControls : MonoBehaviour, ITrackableEventHandler {
 
 	public void OnTrackableStateChanged(TrackableBehaviour.Status previousStatus, TrackableBehaviour.Status newStatus) {
         switch (newStatus) {
+			case TrackableBehaviour.Status.LIMITED:
 			case TrackableBehaviour.Status.DETECTED:
 			case TrackableBehaviour.Status.TRACKED:
 			case TrackableBehaviour.Status.EXTENDED_TRACKED:
 				this.OnNextTick(SwapTo);
 				OnTrack.Invoke();
 				break;
-			case TrackableBehaviour.Status.NOT_FOUND:
+			case TrackableBehaviour.Status.NO_POSE:
 				OnHidden.Invoke();
 				break;
 		}
