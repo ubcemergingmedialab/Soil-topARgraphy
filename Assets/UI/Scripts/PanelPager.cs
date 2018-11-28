@@ -47,28 +47,6 @@ public class PanelPager : MonoBehaviour
     }
 
     /// <summary>
-    /// Setup buttons. Will reset their On Click listeners.
-    /// </summary>
-    [ContextMenu("Setup Controls")]
-    private void SetupButtonListeners() {
-        if (CloseButton)
-        {
-            CloseButton.onClick.RemoveAllListeners();
-            CloseButton.onClick.AddListener(() => gameObject.SetActive(false));
-        }
-        if (PreviousButton)
-        {
-            PreviousButton.onClick.RemoveAllListeners();
-            PreviousButton.onClick.AddListener(PreviousPanel);
-        }
-        if (NextButton)
-        {
-            NextButton.onClick.RemoveAllListeners();
-            NextButton.onClick.AddListener(NextPanel);
-        }
-    }
-
-    /// <summary>
     /// Disables or enables buttons, depending on current page.
     /// </summary>
     private void SetButtonsInteractable()
