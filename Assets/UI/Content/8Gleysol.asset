@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2904166b7f5b4054e8cc48d5a4c9d51d, type: 3}
   m_Name: 8Gleysol
   m_EditorClassIdentifier: 
-  MapPosition: {x: 0.24, y: 0.007, z: -0.3466}
+  MapPosition: {x: 0.528, y: 0.0916, z: 0.043}
   IsBonus: 1
   Title: Gleysol
   Description:
@@ -27,7 +27,8 @@ MonoBehaviour:
     Gleysolic soils in the presence of well-developed gley features within 50 cm of
     the soil surface. Horizons with these features are labelled with the subscript
     g (e.g., Bg, Aeg, Cg)"
-  Images: []
+  Images:
+  - {fileID: 21300000, guid: b92f1b952adf2cf45acf07e3aea02e0f, type: 3}
   quizzes:
   - {fileID: 11400000, guid: e2948a36269acef49bf9f8cdf11f9649, type: 2}
   - {fileID: 11400000, guid: 980d6aa56625a1547883412cb30f48a5, type: 2}

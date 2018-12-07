@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2904166b7f5b4054e8cc48d5a4c9d51d, type: 3}
   m_Name: 10Regosol
   m_EditorClassIdentifier: 
-  MapPosition: {x: 0.153, y: 0.007, z: 0.241}
+  MapPosition: {x: 0.259, y: 0.005, z: 0.241}
   IsBonus: 1
   Title: Regosol
   Description:
@@ -23,7 +23,8 @@ MonoBehaviour:
     where the land surface is (or has recently been) unstable. Because of the unstable
     surface, the soil has had little time to develop. Consequently, soil horizons
     are very weakly expressed if present at all."
-  Images: []
+  Images:
+  - {fileID: 21300000, guid: a3a897ceb97eb81408124eb4857326fe, type: 3}
   quizzes:
   - {fileID: 11400000, guid: e54e185d6f968be4ab22422096cb030e, type: 2}
   - {fileID: 11400000, guid: 6a571518f78fec449b15f530c61ea1df, type: 2}

@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2904166b7f5b4054e8cc48d5a4c9d51d, type: 3}
   m_Name: 9Cryosol
   m_EditorClassIdentifier: 
-  MapPosition: {x: 0.5216, y: 0.007, z: -0.3887}
+  MapPosition: {x: 0.492, y: 0.06, z: -0.179}
   IsBonus: 1
   Title: Cryosol
   Description:
@@ -21,7 +21,8 @@ MonoBehaviour:
     the pedon is strongly cryoturbated in the active layer.  They form in regions
     that have a mean annual soil temperature below 0\xB0C. Cryosols occupy much of
     the northern third of Canada."
-  Images: []
+  Images:
+  - {fileID: 21300000, guid: dc1d8d619b7bd804c9240352d9c0dc4c, type: 3}
   quizzes:
   - {fileID: 11400000, guid: c9fbf2e52fddcda4b9d0e776f666884f, type: 2}
   - {fileID: 11400000, guid: caa9592e29c94c8489fe7492e4a6fb77, type: 2}
