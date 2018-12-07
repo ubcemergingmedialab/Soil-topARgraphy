@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -15,8 +15,10 @@ MonoBehaviour:
   IsBonus: 1
   Title: Cryosol
   Description:
-  - "Soils of this order have permafrost either within 1 m of the surface or within
-    2 m if the pedon is strongly cryoturbated in the active layer.  They form in regions
+  - "** Disclaimer: In reality, this soil order is located outside of Kamloop.  We
+    placed it here to reflect the elevation and let you read its information.** \nSoils
+    of this order have permafrost either within 1 m of the surface or within 2 m if
+    the pedon is strongly cryoturbated in the active layer.  They form in regions
     that have a mean annual soil temperature below 0\xB0C. Cryosols occupy much of
     the northern third of Canada."
   Images: []

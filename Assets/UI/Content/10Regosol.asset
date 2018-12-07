@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -15,12 +15,14 @@ MonoBehaviour:
   IsBonus: 1
   Title: Regosol
   Description:
-  - Regosols are weakly developed soils to meet the classification requirements of
-    other soil orders. They lack a recognizable B horizon (i.e., B horizon is less
-    than 5 cm thick). Soils of the Regosolic order are most commonly associated with
-    landforms where the land surface is (or has recently been) unstable. Because of
-    the unstable surface, the soil has had little time to develop. Consequently, soil
-    horizons are very weakly expressed if present at all.
+  - "** Disclaimer: In reality, this soil order is located outside of Kamloop.  We
+    placed it here to reflect the elevation and let you read its information.** \nRegosols
+    are weakly developed soils to meet the classification requirements of other soil
+    orders. They lack a recognizable B horizon (i.e., B horizon is less than 5 cm
+    thick). Soils of the Regosolic order are most commonly associated with landforms
+    where the land surface is (or has recently been) unstable. Because of the unstable
+    surface, the soil has had little time to develop. Consequently, soil horizons
+    are very weakly expressed if present at all."
   Images: []
   quizzes:
   - {fileID: 11400000, guid: e54e185d6f968be4ab22422096cb030e, type: 2}

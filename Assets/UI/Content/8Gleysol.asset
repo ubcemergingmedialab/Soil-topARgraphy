@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -15,7 +15,9 @@ MonoBehaviour:
   IsBonus: 1
   Title: Gleysol
   Description:
-  - Gleysols are soils that have undergone prolonged periods of intermittent or continuous
+  - "** Disclaimer: In reality, this soil order is located outside of Kamloop.  We
+    placed it here to reflect the elevation and let you read its information.** \nGleysols
+    are soils that have undergone prolonged periods of intermittent or continuous
     saturation with water causing reducing conditions during their genesis. This results
     in characteristic colours and mottling. Water saturation leads to depletion of
     oxygen in the soil and cause the transformation of metals such as iron. When oxygen
@@ -24,7 +26,7 @@ MonoBehaviour:
     hue and this dominates the colour of the horizon. The diagnostic criteria for
     Gleysolic soils in the presence of well-developed gley features within 50 cm of
     the soil surface. Horizons with these features are labelled with the subscript
-    g (e.g., Bg, Aeg, Cg)
+    g (e.g., Bg, Aeg, Cg)"
   Images: []
   quizzes:
   - {fileID: 11400000, guid: e2948a36269acef49bf9f8cdf11f9649, type: 2}

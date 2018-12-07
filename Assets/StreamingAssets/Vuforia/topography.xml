@@ -2,6 +2,5 @@
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
     <ImageTarget name="color_map_c" size="1.000000 0.992714" />
-    <ImageTarget name="bw_map_a" size="1.000000 1.112057" />
   </Tracking>
 </QCARConfig>

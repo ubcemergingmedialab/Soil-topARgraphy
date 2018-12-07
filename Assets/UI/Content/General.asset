@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -14,7 +14,15 @@ MonoBehaviour:
   MapPosition: {x: 0.022, y: 0.007, z: -0.148}
   IsBonus: 1
   Title: General
-  Description: []
+  Description:
+  - "Soil TopARgraphy is a mobile app designed for students in the Introduction to
+    Soil Science course (APBI 200) at the University of British Columbia. Students
+    view and learn about the topographical distribution of different soil orders in
+    Kamloops, B.C through an immersive and visual Augmented Reality (AR) terrain.\r\n\nEmerging
+    media like Augmented Reality brings interactivity to lectures and laboratory sessions
+    focused on soil formation and classification. This promotes student engagement
+    and deeper comprehension of the material. For more information, please visit eml.ubc.ca/projects/soil-topargraphy/
+    or contact Dr. Maja Krzic at krzic@mail.ubc.ca. "
   Images: []
   quizzes:
   - {fileID: 11400000, guid: 7383348e9e88ea84ebbf146d90f6395d, type: 2}
