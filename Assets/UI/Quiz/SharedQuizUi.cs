@@ -1,15 +1,15 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; 
+using UnityEngine.UI;
 
 public class SharedQuizUi : MonoBehaviour {
-    public Text QuestionObject; 
-    public Text ResultObject; 
+    public Text QuestionObject;
+    public Text ResultObject;
     private IQuizInput QuizInput;
 
     [SerializeField]
-    private QuizContent currentContent = null; 
+    private QuizContent currentContent = null;
 
     [ContextMenu("Refresh")]
     void Start()
@@ -39,15 +39,18 @@ public class SharedQuizUi : MonoBehaviour {
 
     /// <summary>Handle submitting an answer</summary>
 	public void HandleSubmit() {
+        Debug.Log("pressed");
         if (currentContent == null) return;
-        
+
         var answerIsCorrect = QuizInput.CheckAnswer(currentContent);
+        var color = ResultObject.color;
         if (answerIsCorrect) {
-            ResultObject.color += new Color(0, 0, 0, 1);
+            color.a = 0;
             ResultObject.text = currentContent.ResultText;
         } else {
-            ResultObject.color += new Color(0, 0, 0, 1);
+            color.a = 1;
             ResultObject.text = currentContent.FailedText;
         }
+        ResultObject.color = color;
 	}
 }
