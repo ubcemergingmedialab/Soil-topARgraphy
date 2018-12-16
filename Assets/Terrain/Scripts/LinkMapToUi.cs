@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Vuforia;
 
 public class LinkMapToUi : MonoBehaviour {
 	public MapControls Controller;
@@ -54,7 +55,9 @@ public class LinkMapToUi : MonoBehaviour {
             });
 
             var closeButton = infoCardPager.CloseButton;
-            closeButton.onClick.AddListener(() => Raycaster.enabled = true);
+            closeButton.onClick.AddListener(() => {
+                Raycaster.enabled = true;
+            });
         }
         if (infoCard) {
             Raycaster.OnHit.AddListener(infoCard.Display);
