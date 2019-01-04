@@ -39,18 +39,12 @@ public class SharedQuizUi : MonoBehaviour {
 
     /// <summary>Handle submitting an answer</summary>
 	public void HandleSubmit() {
-        Debug.Log("pressed");
         if (currentContent == null) return;
 
         var answerIsCorrect = QuizInput.CheckAnswer(currentContent);
+        ResultObject.text = answerIsCorrect ? currentContent.ResultText : currentContent.FailedText;
         var color = ResultObject.color;
-        if (answerIsCorrect) {
-            color.a = 0;
-            ResultObject.text = currentContent.ResultText;
-        } else {
-            color.a = 1;
-            ResultObject.text = currentContent.FailedText;
-        }
+        color.a = 1;
         ResultObject.color = color;
 	}
 }
