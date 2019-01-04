@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Name: 1Podzol
   m_EditorClassIdentifier: 
   MapPosition: {x: -0.284, y: 0.058, z: 0.3247}
+  IsBonus: 0
   Title: Podzol
   Description:
-  - Podzolic soils are forested soils found primarily on sandy deposits in ecozones
-    (or parts of ecozones) where the mean annual precipitation is above 700 mm. Coniferous-dominated
-    plant communities are the major vegetation type found on Podzolic soils. Podzolic
-    soils have B horizons that are enriched with amorphous material composed of humified
-    organic matter, aluminum and iron. These soils generally have organic surface
-    horizons, a light coloured eluvial horizon (which may be absent), and a reddish
-    to black B horizon with an abrupt upper boundary.
+  - "These soils are typically found in coniferous forests located on coarse deposits
+    in regions with the mean annual precipitation >700 mm. Podzols have B horizons
+    that are enriched with amorphous material composed of well-decomposed organic
+    matter, aluminum and iron (i.e., Bf, Bhf, Bh). These soils generally have organic
+    surface horizons, a light coloured eluvial horizon (which may be absent), and
+    a reddish to very dark, almost black B horizon with an abrupt upper boundary.\r\n"
   Images:
   - {fileID: 21300000, guid: bdd14fb02fe043643a656fcc49338bcc, type: 3}
   quizzes:

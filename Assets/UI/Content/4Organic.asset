@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -12,16 +12,22 @@ MonoBehaviour:
   m_Name: 4Organic
   m_EditorClassIdentifier: 
   MapPosition: {x: -0.106, y: 0.0645, z: 0.2745}
+  IsBonus: 0
   Title: Organic
   Description:
-  - Soils in this order are composed primarily of organic mater and include soils
+  - "Soils in this order are composed primarily of organic mater and include soils
     commonly known as peat, bog or fen soils. Most of these soils are saturated with
-    water for prolonged periods of time. Organic soils contain 17% organic C (or 30%
-    organic matter) by weight. Soils of the Organic order are the dominant wetland
-    soils found in forested regions of Canada but they also occur in non-wetland positions
-    in upland sites where leaf litter accumulates.
+    water for prolonged periods of time. Organic soils contain >17% organic C (or
+    >30% organic matter) by weight. Organic soils are the dominant wetland soils found
+    in forested regions of Canada, but they also occur in non-wetland positions in
+    upland sites where leaf litter accumulates.\r\nThe master horizon for the wetland
+    Organic soils is the O horizon, distinguished by 3 decomposition stages of organic
+    material (Of, Om, and Oh). The upland versions of the Organic order are composed
+    of leaf litter and other woody debris, which are termed folic materials. These
+    organic horizons are assigned an L, F, or H designation, depending again on the
+    degree of decomposition.\r\n"
   Images:
-  - {fileID: 21300000, guid: 8a9254bf74ad25748aa51b7900bb31eb, type: 3}
+  - {fileID: 21300000, guid: 66347ce0d35322f48aa33b99792aface, type: 3}
   quizzes:
   - {fileID: 11400000, guid: e77159ed0f5ce6e4da89fe7689f76b39, type: 2}
   - {fileID: 11400000, guid: c332b3243df83874d9c82ae130a025fc, type: 2}

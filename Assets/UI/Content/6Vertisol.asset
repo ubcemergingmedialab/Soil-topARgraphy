@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -12,16 +12,18 @@ MonoBehaviour:
   m_Name: 6Vertisol
   m_EditorClassIdentifier: 
   MapPosition: {x: -0.3643, y: 0.0475, z: -0.0978}
+  IsBonus: 0
   Title: Vertisol
   Description:
-  - "\rVertisols are heavy textured soils (with \u2265 60% clay) with shrink-swell
-    characteristics. They lack the horizon development diagnostic of other horizons.
+  - "Vertisols are characterized by having \u2265 60% clay with shrink-swell characteristics.
     Slickenslides and argillipedoturbation (disruption and mixing caused by shrink-swell
     of the soil mass) are diagnostic features of these soils. The horizons that result
     from this mixing are inverted of material and are called vertic horizons (e.g.,
     Bv, Cv). As a mass of soil is displaced along a crack, the face of the mass can
     become very smooth and polished and these polished surfaces are called slickenslides.
-    The horizons in which slickenslides are Bss, Ckss, or Cgss."
+    The horizons in which slickenslides occur are Bss, Ckss, or Cgss. Vertisols mainly
+    occur in the cool, subarid to subhumid, grassland portion of the Interior Plains
+    of western Canada."
   Images:
   - {fileID: 21300000, guid: 3e5a0b52071321e4cbae7466875085a5, type: 3}
   quizzes:

@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -12,20 +12,15 @@ MonoBehaviour:
   m_Name: 7Solonetz
   m_EditorClassIdentifier: 
   MapPosition: {x: -0.214, y: 0.0235, z: -0.101}
+  IsBonus: 0
   Title: Solonetz
   Description:
-  - "Solonetzic soils occur in the same ecozones as Chernozemic soils. These soils
-    are characterized by low (exchangeable) calcium to magnesium ratio. The diagnostic
-    horizon is a Bn (or Bnt), which is very hard when dry and which swells and becomes
-    relatively impermeable when wet.\r"
-  - There are four great groups of the Solonetzic order. Three of them represent an
-    idealized evolutionary sequence, which begins with soil with a Bn horizon (Solonetz
-    great group). Sodium-enhanced clay translocation begins, creating an Ae and a
-    Bnt horizon (Solodized Solonetz great group). When the upper Bnt is altered by
-    the weathering processes outlined above, the soils are placed into the Solod great
-    group. In soils formed in parent material high in clay (typically > 60% clay)
-    the Ae/Bnt sequence may be weakly expressed and those soils are classified into
-    the Vertic Solonetz great group.
+  - These soils have B horizons with prismatic or columnar aggregates that break to
+    hard to extremely hard (when dry) blocky aggregates with dark coatings. Solonetzic
+    soils have formed on saline parent materials high in sodium, and are found in
+    the semiarid to sub-humid regions often in association with Chernozemic soils.
+    Most Solonetzic soils are found in grassland ecosystems. The diagnostic horizon
+    is a Bn or Bnt.
   Images:
   - {fileID: 21300000, guid: 76645f91f383aa047b17043a7230d0a4, type: 3}
   quizzes:

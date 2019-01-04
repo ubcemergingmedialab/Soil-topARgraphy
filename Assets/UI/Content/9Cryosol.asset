@@ -11,16 +11,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2904166b7f5b4054e8cc48d5a4c9d51d, type: 3}
   m_Name: 9Cryosol
   m_EditorClassIdentifier: 
-  MapPosition: {x: 0.492, y: 0.06, z: -0.179}
+  MapPosition: {x: 0.576, y: 0.206, z: 0.33}
   IsBonus: 1
   Title: Cryosol
   Description:
-  - "** Disclaimer: In reality, this soil order is located outside of Kamloop.  We
-    placed it here to reflect the elevation and let you read its information.** \nSoils
+  - "**NOTE: there are no Cryosolis near Kamloops, BC, it is added to the map to complete
+    description of 10 soil orders of the Canadian classification system. ** \r\n\nSoils
     of this order have permafrost either within 1 m of the surface or within 2 m if
-    the pedon is strongly cryoturbated in the active layer.  They form in regions
-    that have a mean annual soil temperature below 0\xB0C. Cryosols occupy much of
-    the northern third of Canada."
+    the pedon is strongly cryoturbated (mixed due to freezing and thawing) in the
+    active layer.  They form in regions that have a mean annual soil temperature below
+    0\xB0C. Cryosols occupy much of the northern Canada where permafrost exists close
+    to the surface of both mineral and organic deposits. Cryosols predominate north
+    of the tree line, are common in the subarctic forests in fine-textured soils,
+    and extend into the boreal forest in some organic materials and into some alpine
+    areas of mountainous regions.\r\n"
   Images:
   - {fileID: 21300000, guid: dc1d8d619b7bd804c9240352d9c0dc4c, type: 3}
   quizzes:

@@ -11,22 +11,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2904166b7f5b4054e8cc48d5a4c9d51d, type: 3}
   m_Name: 8Gleysol
   m_EditorClassIdentifier: 
-  MapPosition: {x: 0.528, y: 0.0916, z: 0.043}
+  MapPosition: {x: 0.551, y: 0.198, z: 0.03}
   IsBonus: 1
   Title: Gleysol
   Description:
-  - "** Disclaimer: In reality, this soil order is located outside of Kamloop.  We
-    placed it here to reflect the elevation and let you read its information.** \nGleysols
-    are soils that have undergone prolonged periods of intermittent or continuous
-    saturation with water causing reducing conditions during their genesis. This results
-    in characteristic colours and mottling. Water saturation leads to depletion of
-    oxygen in the soil and cause the transformation of metals such as iron. When oxygen
-    is present, iron is oxidized and has a reddish colour, while when oxygen becomes
-    depleted (due to water saturation) the iron is reduced and takes on a blue-grey
-    hue and this dominates the colour of the horizon. The diagnostic criteria for
-    Gleysolic soils in the presence of well-developed gley features within 50 cm of
-    the soil surface. Horizons with these features are labelled with the subscript
-    g (e.g., Bg, Aeg, Cg)"
+  - "**NOTE: there are no Gleysols near Kamloops, BC, it is added to the map to complete
+    description of 10 soil orders of the Canadian classification system. **\r\n\nThese
+    soils have undergone prolonged periods of intermittent or continuous saturation
+    with water causing reducing conditions during their genesis. This results in characteristic
+    colours and mottling. Water saturation leads to depletion of oxygen in the soil
+    and cause the transformation of metals such as iron. When oxygen is present, iron
+    is oxidized and has a reddish colour, while when oxygen becomes depleted (due
+    to water saturation) the iron is reduced and takes on a blue-grey hue and this
+    dominates the colour of the horizon. The diagnostic criteria for Gleysols is the
+    presence of well-developed gley features within 50 cm of the soil surface (e.g.,
+    Bg, Cg).\r\nIn subhumid regions, Gleysols occur commonly in shallow depressions
+    and on level lowlands that are saturated with water every spring. In more humid
+    areas, they may also occur on slopes and on undulating terrain.\r\n"
   Images:
   - {fileID: 21300000, guid: b92f1b952adf2cf45acf07e3aea02e0f, type: 3}
   quizzes:

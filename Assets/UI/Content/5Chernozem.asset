@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Name: 5Chernozem
   m_EditorClassIdentifier: 
   MapPosition: {x: -0.106, y: 0.044, z: 0.0142}
+  IsBonus: 0
   Title: Chernozem
   Description:
-  - "Chernozemic soils have surface horizons darkened by organic matter accumulation.
-    A chernozemic A horizon must be at least 10 cm thick and be dark in colour. They
-    are generally found under grassland communities or grassland-forest communities
-    with associated shrubs and forbs. The region dominated by Chernozemic soils has
-    mean annual soil temperatures > 0\xB0C but usually < 6\xB0C and experiences water
-    deficits in most growing seasons."
+  - "Chernozems are generally found under grasslands or grassland-forest transition
+    zones, and have surface horizons darkened by organic matter accumulation. A chernozemic
+    A horizon must be at least 10 cm thick and be dark in colour. They. The region
+    dominated by Chernozemic soils has mean annual soil temperatures > 0\xB0C but
+    usually < 6\xB0C and experiences water deficits in most growing seasons."
   Images:
   - {fileID: 21300000, guid: 4e2a00da80a27e2428f57b1b54767e3c, type: 3}
   quizzes:
