@@ -19,12 +19,20 @@ public class PanelPager : MonoBehaviour
     public Button PreviousButton = null;
     /// <summary>Button to move to the next panel</summary>
     public Button NextButton = null;
+    /// <summary>Button to complete onboarding and exit to the next scene</summary>
+    public Button DoneButton = null;
 
     /// <summary>Index of the currently active panel</summary>
     private int currentIndex = 0;
 
     void Start()
     {
+        // Attches respective button variables to unity buttons
+        PreviousButton = GameObject.Find("PreviousButton").GetComponent<Button>();
+        NextButton = GameObject.Find("NextButton").GetComponent<Button>();
+        DoneButton = GameObject.FindWithTag("DoneButton").GetComponent<Button>();
+        Debug.Log("Done button = " + DoneButton);
+        
         // Auto-fill panels list
         if (Panels.Count == 0)
         {
@@ -51,11 +59,17 @@ public class PanelPager : MonoBehaviour
     /// </summary>
     private void SetButtonsInteractable()
     {
+        // Sets the previous button active on every panel except the first
         if (PreviousButton) {
-            PreviousButton.interactable = currentIndex > 0;
+            PreviousButton.gameObject.SetActive(currentIndex > 0);
         }
+        // Sets the next button active on every panel except the last
         if (NextButton) {
-            NextButton.interactable = currentIndex < Panels.Count - 1;
+            NextButton.gameObject.SetActive(currentIndex < Panels.Count - 1);
+        }
+        // Only sets the done button active on the last panel
+        if (DoneButton) {
+            DoneButton.gameObject.SetActive(currentIndex == Panels.Count - 1);
         }
     }
 
