@@ -31,7 +31,6 @@ public class PanelPager : MonoBehaviour
         PreviousButton = GameObject.Find("PreviousButton").GetComponent<Button>();
         NextButton = GameObject.Find("NextButton").GetComponent<Button>();
         DoneButton = GameObject.FindWithTag("DoneButton").GetComponent<Button>();
-        Debug.Log("Done button = " + DoneButton);
         
         // Auto-fill panels list
         if (Panels.Count == 0)
