@@ -30,7 +30,7 @@ public class PanelPager : MonoBehaviour
         // Attches respective button variables to unity buttons
         PreviousButton = GameObject.Find("PreviousButton").GetComponent<Button>();
         NextButton = GameObject.Find("NextButton").GetComponent<Button>();
-        DoneButton = GameObject.FindWithTag("DoneButton").GetComponent<Button>();
+        DoneButton = GameObject.Find("DoneButton").GetComponent<Button>();
         
         // Auto-fill panels list
         if (Panels.Count == 0)
