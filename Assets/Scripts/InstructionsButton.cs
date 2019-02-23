@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InfoButton : MonoBehaviour {
+public class InstructionsButton : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
