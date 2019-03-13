@@ -158,7 +158,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: ca.ubc.eml.topargraphy
-    iOS: ca.ubc.eml.topargraphytest
+    iOS: ca.ubc.eml.topargraphy
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 19

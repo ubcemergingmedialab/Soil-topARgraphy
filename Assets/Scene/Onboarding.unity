@@ -382,9 +382,9 @@ MonoBehaviour:
   - {fileID: 1919403161}
   - {fileID: 1996011091}
   CloseButton: {fileID: 1524417105}
-  PreviousButton: {fileID: 254592316}
+  PreviousButton: {fileID: 1453130976}
   NextButton: {fileID: 254592316}
-  DoneButton: {fileID: 0}
+  DoneButton: {fileID: 110206132}
 --- !u!114 &206692853
 MonoBehaviour:
   m_ObjectHideFlags: 0

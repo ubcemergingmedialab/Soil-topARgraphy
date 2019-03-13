@@ -967,6 +967,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1325879115}
+        m_MethodName: PreloadNewScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &195945937
@@ -4540,7 +4551,7 @@ Canvas:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1306149333}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
@@ -4754,7 +4765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c15b3c6b09db64c69b201b46816c6b2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToOpen: 
+  sceneToOpen: Onboarding
   preloadOnStart: 0
 --- !u!114 &1325879116
 MonoBehaviour:
