@@ -3,6 +3,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Vuforia;
 
+/// <summary>
+/// Our UI panels are split into their own scene for cleanliness.
+/// This script imports the UI scene into the current scene, and then
+/// links event listeners from the UI to the current scene.
+/// </summary>
 public class LinkMapToUi : MonoBehaviour {
 	public MapControls Controller;
     public Raycaster Raycaster;
@@ -14,6 +19,7 @@ public class LinkMapToUi : MonoBehaviour {
     }
 
     private IEnumerator LoadUiScene() {
+        // Load UI scene
         if (!SceneManager.GetSceneByName(UiSceneName).isLoaded) {
             Debug.Log("Loading UI");
             var asyncLoad = SceneManager.LoadSceneAsync(UiSceneName, LoadSceneMode.Additive);
@@ -21,11 +27,10 @@ public class LinkMapToUi : MonoBehaviour {
         } else {
             Debug.Log("UI already loaded");
         }
-
         var uiScene = SceneManager.GetSceneByName(UiSceneName);
-        Canvas infoCardParent = null;
-        PanelPager infoCardPager = null;
-        Canvas infoCardContentCanvas = null;
+
+        // Find important UI elements in the new scene
+        Card infoCardParent = null;
         UiPanel infoCard = null;
         QuizQuestionsListUi quizList = null;
         Canvas toggleParent = null;
@@ -33,9 +38,7 @@ public class LinkMapToUi : MonoBehaviour {
         foreach (var gameObject in uiScene.GetRootGameObjects()) {
             switch (gameObject.tag) {
                 case "InfoCard":
-                    infoCardParent = gameObject.GetComponent<Canvas>();
-                    infoCardPager = gameObject.GetComponent<PanelPager>();
-                    infoCardContentCanvas = infoCardPager.Panels[0].transform.parent.gameObject.GetComponent<Canvas>();
+                    infoCardParent = gameObject.GetComponent<Card>();
                     infoCard = gameObject.GetComponentInChildren<UiPanel>();
                     quizList = gameObject.GetComponentInChildren<QuizQuestionsListUi>(includeInactive: true);
                     break;
@@ -47,15 +50,13 @@ public class LinkMapToUi : MonoBehaviour {
         }
 
         if (infoCardParent) {
+            // Open an info card when a flag is tapped on
             Raycaster.OnHit.AddListener((_) => {
-                infoCardPager.Reset();
-                infoCardParent.enabled = true;
-                infoCardContentCanvas.enabled = true;
+                infoCardParent.SetVisible(true);
                 Raycaster.enabled = false;
             });
 
-            var closeButton = infoCardPager.CloseButton;
-            closeButton.onClick.AddListener(() => {
+            infoCardParent.OnClose.AddListener(() => {
                 Raycaster.enabled = true;
             });
         }
