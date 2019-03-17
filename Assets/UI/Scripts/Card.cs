@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 /// <summary>
 /// Manage a UI card that can be shown and hidden
@@ -15,17 +16,23 @@ public class Card : MonoBehaviour
     private Canvas contentCanvas;
 
     public PanelPager Pager = null;
-    public Button.ButtonClickedEvent OnClose;
+    public UnityEvent OnOpen;
+    public UnityEvent OnClose;
+
+    public bool IsOpen {
+        get {
+            return canvas.enabled;
+        }
+    }
 
     void Start() {
-        if (Pager) {
-            Pager.CloseButton.onClick.AddListener(OnClose.Invoke);
-        }
+        SetVisible(false);
     }
 
     public void SetVisible(bool visible) {
         canvas.enabled = visible;
         contentCanvas.enabled = visible;
         if (Pager) Pager.Reset();
+        (visible ? OnOpen : OnClose).Invoke();
     }
 }

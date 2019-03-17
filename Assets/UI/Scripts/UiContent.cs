@@ -11,6 +11,7 @@ public class UiContent : ScriptableObject {
 	public Vector3 MapPosition;
 
 	public bool IsBonus = false;
+	public bool ShowOnboardingButton = false;
 
 	/// <summary>Title of the info panel.</summary>
 	public string Title;
