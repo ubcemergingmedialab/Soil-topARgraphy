@@ -33,7 +33,6 @@ public class LinkMapToUi : MonoBehaviour {
         Card infoCardParent = null;
         UiPanel infoCard = null;
         QuizQuestionsListUi quizList = null;
-        Canvas toggleParent = null;
         TerrainToggle toggle = null;
         foreach (var gameObject in uiScene.GetRootGameObjects()) {
             switch (gameObject.tag) {
@@ -43,7 +42,6 @@ public class LinkMapToUi : MonoBehaviour {
                     quizList = gameObject.GetComponentInChildren<QuizQuestionsListUi>(includeInactive: true);
                     break;
                 case "TerrainControls":
-                    toggleParent = gameObject.GetComponent<Canvas>();
                     toggle = gameObject.GetComponentInChildren<TerrainToggle>();
                     break;
             }
@@ -66,13 +64,12 @@ public class LinkMapToUi : MonoBehaviour {
         if (quizList) {
             Raycaster.OnHit.AddListener(content => quizList.Display(content.quizzes));
         }
-        if (toggleParent) {
-            Controller.OnTrack.AddListener(() => toggleParent.enabled = true);
-            Controller.OnHidden.AddListener(() => toggleParent.enabled = false);
-        }
         if (toggle) {
+            Controller.OnTrack.AddListener(() => toggle.gameObject.SetActive(true));
+            Controller.OnHidden.AddListener(() => toggle.gameObject.SetActive(false));
             toggle.OnChange.AddListener(Controller.SwapTo);
             Controller.Provider = (CurrentMapTypeProvider) toggle;
+            toggle.gameObject.SetActive(false);
         }
     }
 }

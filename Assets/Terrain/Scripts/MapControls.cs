@@ -21,6 +21,9 @@ public class MapControls : MonoBehaviour, ITrackableEventHandler {
 	public UnityEvent OnTrack;
 	public UnityEvent OnHidden;
 
+	// Exposes status for debugger
+	private TrackableBehaviour.Status status;
+
 	void Start() {
 		var trackableBehaviour = GetComponentInParent<TrackableBehaviour>();
         if (trackableBehaviour)
@@ -48,16 +51,17 @@ public class MapControls : MonoBehaviour, ITrackableEventHandler {
     }
 
 	public void OnTrackableStateChanged(TrackableBehaviour.Status previousStatus, TrackableBehaviour.Status newStatus) {
-        switch (newStatus) {
-			case TrackableBehaviour.Status.DETECTED:
-			case TrackableBehaviour.Status.TRACKED:
-			case TrackableBehaviour.Status.EXTENDED_TRACKED:
-				this.OnNextTick(SwapTo);
-				OnTrack.Invoke();
-				break;
-			case TrackableBehaviour.Status.NO_POSE:
-				OnHidden.Invoke();
-				break;
+		status = newStatus;
+		if (detected(newStatus) && !detected(previousStatus)) {
+			OnTrack.Invoke();
+		} else if (newStatus == TrackableBehaviour.Status.NO_POSE) {
+			OnHidden.Invoke();
 		}
     }
+
+	private bool detected(TrackableBehaviour.Status status) {
+		return (status == TrackableBehaviour.Status.DETECTED ||
+            status == TrackableBehaviour.Status.TRACKED ||
+            status == TrackableBehaviour.Status.EXTENDED_TRACKED);
+	}
 }
