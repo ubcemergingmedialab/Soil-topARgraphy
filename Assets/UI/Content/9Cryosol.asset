@@ -11,8 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2904166b7f5b4054e8cc48d5a4c9d51d, type: 3}
   m_Name: 9Cryosol
   m_EditorClassIdentifier: 
-  MapPosition: {x: 0.576, y: 0.206, z: 0.33}
+  MapPosition: {x: 0.576, y: 0.183, z: 0.33}
   IsBonus: 1
+  ShowOnboardingButton: 0
   Title: Cryosol
   Description:
   - "**NOTE: there are no Cryosolis near Kamloops, BC, it is added to the map to complete

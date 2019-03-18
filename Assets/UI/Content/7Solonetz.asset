@@ -11,8 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2904166b7f5b4054e8cc48d5a4c9d51d, type: 3}
   m_Name: 7Solonetz
   m_EditorClassIdentifier: 
-  MapPosition: {x: -0.214, y: 0.0235, z: -0.101}
+  MapPosition: {x: -0.214, y: 0.1, z: -0.0914}
   IsBonus: 0
+  ShowOnboardingButton: 0
   Title: Solonetz
   Description:
   - These soils have B horizons with prismatic or columnar aggregates that break to

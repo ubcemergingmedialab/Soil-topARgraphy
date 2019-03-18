@@ -14,6 +14,7 @@ public class BuildFlags : MonoBehaviour
         Build();
     }
 
+    [ContextMenu("Build")]
     public void Build() {
         foreach (var content in Flags) {
             var prefab = content.IsBonus ? BonusPrefab : FlagPrefab;

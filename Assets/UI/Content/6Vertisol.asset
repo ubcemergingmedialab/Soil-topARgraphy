@@ -11,8 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2904166b7f5b4054e8cc48d5a4c9d51d, type: 3}
   m_Name: 6Vertisol
   m_EditorClassIdentifier: 
-  MapPosition: {x: -0.3643, y: 0.0475, z: -0.0978}
+  MapPosition: {x: -0.3643, y: 0.0924, z: -0.059}
   IsBonus: 0
+  ShowOnboardingButton: 0
   Title: Vertisol
   Description:
   - "Vertisols are characterized by having \u2265 60% clay with shrink-swell characteristics.
