@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -14,5 +14,5 @@ MonoBehaviour:
   Question: 2. What is the most dominant soil formation process occurring in the Podzolic
     order?
   ResultText: Accumulation of Fe and Al oxides and/or hydroxides and/or organic matter
-    in the B horizon (which leads to formation of one of the Podzolic B horizons)
-  FailedText: Incorrect, try again
+    in the B horizon (which leads to formation of one of the Podzolic B horizons).
+  FailedText: Incorrect, try again!

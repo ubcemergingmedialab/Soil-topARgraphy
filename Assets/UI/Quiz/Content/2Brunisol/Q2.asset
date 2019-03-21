@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Question: 2. What are the most dominant soil formation processes occurring in the
     Brunisolic order?
-  ResultText: 'Some movement of soluble salts within the soil profile, Formation of
+  ResultText: Some movement of soluble salts within the soil profile, Formation of
     Fe and Al secondary minerals, and  Structure development in the finer textured
-    materials different from the original structure of the parent material '
-  FailedText: Incorrect, try again
+    materials different from the original structure of the parent material.
+  FailedText: Incorrect, try again!

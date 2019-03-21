@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Question: 3. What are some clues that can help us recognize the diagnostic horizon
     of the Brunisolic order?
-  ResultText: 
-  FailedText: Incorrect, try again
+  ResultText: 'Congrats, you got it correct! '
+  FailedText: Incorrect, try again!
   QuizOptions:
   - optionText: Patterned ground
     IsCorrect: 0

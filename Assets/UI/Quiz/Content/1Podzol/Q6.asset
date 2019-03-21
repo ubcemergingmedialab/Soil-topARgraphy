@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -20,4 +20,4 @@ MonoBehaviour:
     Fe and Al oxides and hydroxides then are moving through soil profile and if they
     accumulate in B horizons a Bf horizon will form and that also means that a Podzol
     will form.
-  FailedText: Incorrect, try again
+  FailedText: Incorrect, try again!

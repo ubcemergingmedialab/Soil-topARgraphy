@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -11,13 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86ec3933712a83c4ca5d42786597a23f, type: 3}
   m_Name: Q3
   m_EditorClassIdentifier: 
-  Question: 3.Do all clay minerals shrink and swell (i.e., change volume) with changing
+  Question: 3. Do all clay minerals shrink and swell (i.e., change volume) with changing
     soil water content?
   ResultText: Note, only clay minerals of the smectite group (e.g. clay mineral montmoriollinite)
     are capable of shrinking and swelling. They do that since interlayer bonds, in
     their crystalline structure, are weak and incoming water molecules (under wet
     conditions) push apart adjacent layers within their crystalline structure.
-  FailedText: Incorrect, try again
+  FailedText: Incorrect, try again!
   QuizOptions:
   - optionText: Yes
     IsCorrect: 0

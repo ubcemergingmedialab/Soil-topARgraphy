@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -11,10 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86ec3933712a83c4ca5d42786597a23f, type: 3}
   m_Name: Q3
   m_EditorClassIdentifier: 
-  Question: 3.What are some clues that can help you recognize the diagnostic horizon
+  Question: 3. What are some clues that can help you recognize the diagnostic horizon
     of the Organic soil order?
-  ResultText: 
-  FailedText: Incorrect, try again
+  ResultText: 'Congrats, you got it correct! '
+  FailedText: Incorrect, try again!
   QuizOptions:
   - optionText: Patterned ground
     IsCorrect: 0

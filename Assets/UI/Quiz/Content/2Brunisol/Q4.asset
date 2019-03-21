@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -14,4 +14,4 @@ MonoBehaviour:
   Question: 4. What roles does topography play in a formation of Brunisols?
   ResultText: 'Topography does not have a pronounced, direct role in development of
     Brunisols. '
-  FailedText: Incorrect, try again
+  FailedText: Incorrect, try again!

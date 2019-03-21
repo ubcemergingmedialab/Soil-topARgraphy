@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: Q4
   m_EditorClassIdentifier: 
   Question: '4. Are Podzols typical soils in forest ecosystems? '
-  ResultText: 
-  FailedText: Incorrect, try again
+  ResultText: 'Congrats, you got it correct! '
+  FailedText: Incorrect, try again!
   QuizOptions:
   - optionText: Yes
     IsCorrect: 1

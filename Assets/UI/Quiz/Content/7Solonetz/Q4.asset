@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -11,9 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86ec3933712a83c4ca5d42786597a23f, type: 3}
   m_Name: Q4
   m_EditorClassIdentifier: 
-  Question: 4.Which of the following are orders of the Canadian System of Soil Classification?
-  ResultText: 
-  FailedText: Incorrect, try again
+  Question: 4. Which of the following are orders of the Canadian System of Soil Classification?
+  ResultText: 'Congrats, you got it correct! '
+  FailedText: Incorrect, try again!
   QuizOptions:
   - optionText: Loam
     IsCorrect: 0
