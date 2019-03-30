@@ -34,6 +34,7 @@ public class LinkMapToUi : MonoBehaviour {
         UiPanel infoCard = null;
         QuizQuestionsListUi quizList = null;
         TerrainToggle toggle = null;
+        GameObject downloadPopup = null;
         foreach (var gameObject in uiScene.GetRootGameObjects()) {
             switch (gameObject.tag) {
                 case "InfoCard":
@@ -43,6 +44,7 @@ public class LinkMapToUi : MonoBehaviour {
                     break;
                 case "TerrainControls":
                     toggle = gameObject.GetComponentInChildren<TerrainToggle>();
+                    downloadPopup = gameObject.GetComponentInChildren<Hyperlink>().transform.parent.gameObject;
                     break;
             }
         }
@@ -70,6 +72,9 @@ public class LinkMapToUi : MonoBehaviour {
             toggle.OnChange.AddListener(Controller.SwapTo);
             Controller.Provider = (CurrentMapTypeProvider) toggle;
             toggle.gameObject.SetActive(false);
+        }
+        if (downloadPopup) {
+            Controller.OnTrack.AddListener(() => downloadPopup.SetActive(false));
         }
     }
 }
