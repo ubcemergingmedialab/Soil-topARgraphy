@@ -16,12 +16,16 @@ MonoBehaviour:
   ShowOnboardingButton: 0
   Title: Solonetz
   Description:
-  - These soils have B horizons with prismatic or columnar aggregates that break to
+  - '**As one of the typical grassland soils, Solonetz occurs at lower elevation (~400-600
+    m on our target map) and at drier and warmer parts of topography.**
+
+
+    These soils have B horizons with prismatic or columnar aggregates that break to
     hard to extremely hard (when dry) blocky aggregates with dark coatings. Solonetzic
     soils have formed on saline parent materials high in sodium, and are found in
     the semiarid to sub-humid regions often in association with Chernozemic soils.
     Most Solonetzic soils are found in grassland ecosystems. The diagnostic horizon
-    is a Bn or Bnt.
+    is a Bn or Bnt.'
   Images:
   - {fileID: 21300000, guid: 76645f91f383aa047b17043a7230d0a4, type: 3}
   quizzes:

@@ -16,11 +16,13 @@ MonoBehaviour:
   ShowOnboardingButton: 0
   Title: Chernozem
   Description:
-  - "Chernozems are generally found under grasslands or grassland-forest transition
-    zones, and have surface horizons darkened by organic matter accumulation. A chernozemic
-    A horizon must be at least 10 cm thick and be dark in colour. They. The region
-    dominated by Chernozemic soils has mean annual soil temperatures > 0\xB0C but
-    usually < 6\xB0C and experiences water deficits in most growing seasons."
+  - "**As one of the typical grassland soils, Chernozem occurs at lower elevations
+    (~400-600 m on our\r\ntarget map) and at drier and warmer parts of topography.**\n\nChernozems
+    are generally found under grasslands or grassland-forest transition zones, and
+    have surface horizons darkened by organic matter accumulation. A chernozemic A
+    horizon must be at least 10 cm thick and be dark in colour. They. The region dominated
+    by Chernozemic soils has mean annual soil temperatures > 0\xB0C but usually <
+    6\xB0C and experiences water deficits in most growing seasons."
   Images:
   - {fileID: 21300000, guid: 4e2a00da80a27e2428f57b1b54767e3c, type: 3}
   quizzes:

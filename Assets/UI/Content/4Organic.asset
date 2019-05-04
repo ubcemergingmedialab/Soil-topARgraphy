@@ -16,17 +16,19 @@ MonoBehaviour:
   ShowOnboardingButton: 0
   Title: Organic
   Description:
-  - "Soils in this order are composed primarily of organic matter and include soils
-    commonly known as peat, bog or fen soils. Most of these soils are saturated with
-    water for prolonged periods of time. Organic soils contain >17% organic C (or
-    >30% organic matter) by weight. Organic soils are the dominant wetland soils found
-    in forested regions of Canada, but they also occur in non-wetland positions in
-    upland sites where leaf litter accumulates.\r\nThe master horizon for the wetland
-    Organic soils is the O horizon, distinguished by 3 decomposition stages of organic
-    material (Of, Om, and Oh). The upland versions of the Organic order are composed
-    of leaf litter and other woody debris, which are termed folic materials. These
-    organic horizons are assigned an L, F, or H designation, depending again on the
-    degree of decomposition.\r\n"
+  - "**Organic soils can occur at any part of topography as long as there is a substantial
+    restriction of water\r\nmovement through the profile (e.g. in depressions). **\n\nSoils
+    in this order are composed primarily of organic matter and include soils commonly
+    known as peat, bog or fen soils. Most of these soils are saturated with water
+    for prolonged periods of time. Organic soils contain >17% organic C (or >30% organic
+    matter) by weight. Organic soils are the dominant wetland soils found in forested
+    regions of Canada, but they also occur in non-wetland positions in upland sites
+    where leaf litter accumulates.\r\nThe master horizon for the wetland Organic soils
+    is the O horizon, distinguished by 3 decomposition stages of organic material
+    (Of, Om, and Oh). The upland versions of the Organic order are composed of leaf
+    litter and other woody debris, which are termed folic materials. These organic
+    horizons are assigned an L, F, or H designation, depending again on the degree
+    of decomposition.\r\n"
   Images:
   - {fileID: 21300000, guid: 66347ce0d35322f48aa33b99792aface, type: 3}
   quizzes:

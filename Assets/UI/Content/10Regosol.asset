@@ -16,12 +16,14 @@ MonoBehaviour:
   ShowOnboardingButton: 0
   Title: Regosol
   Description:
-  - Regosols are weakly developed soils to meet the classification requirements of
-    other soil orders. They lack a recognizable B horizon (i.e., B horizon is less
-    than 5 cm thick). Soils of the Regosolic order are most commonly associated with
-    landforms where the land surface is (or has recently been) unstable. Because of
-    the unstable surface, the soil has had a limited time to develop. Consequently,
-    soil horizons are very thin if present at all.
+  - "**Regosols may be present in areas with occasional flooding, such as the banks
+    of the Thompson\r\nRivers near Kamloops, BC.** \n\nRegosols are weakly developed
+    soils to meet the classification requirements of other soil orders. They lack
+    a recognizable B horizon (i.e., B horizon is less than 5 cm thick). Soils of the
+    Regosolic order are most commonly associated with landforms where the land surface
+    is (or has recently been) unstable. Because of the unstable surface, the soil
+    has had a limited time to develop. Consequently, soil horizons are very thin if
+    present at all."
   Images:
   - {fileID: 21300000, guid: a3a897ceb97eb81408124eb4857326fe, type: 3}
   quizzes:

@@ -16,15 +16,17 @@ MonoBehaviour:
   ShowOnboardingButton: 0
   Title: Vertisol
   Description:
-  - "Vertisols are characterized by having \u2265 60% clay with shrink-swell characteristics.
-    Slickenslides and argillipedoturbation (disruption and mixing caused by shrink-swell
-    of the soil mass) are diagnostic features of these soils. The horizons that result
-    from this mixing are inverted of material and are called vertic horizons (e.g.,
-    Bv, Cv). As a mass of soil is displaced along a crack, the face of the mass can
-    become very smooth and polished and these polished surfaces are called slickenslides.
-    The horizons in which slickenslides occur are Bss, Ckss, or Cgss. Vertisols mainly
-    occur in the cool, subarid to subhumid, grassland portion of the Interior Plains
-    of western Canada."
+  - "**Topography does not have a prominent, direct role in development of Vertisols;
+    they can be present\r\nat any part of topography. Near Kamloops, these soils are
+    present at lower elevation (~600 m).**\n\nVertisols are characterized by having
+    \u2265 60% clay with shrink-swell characteristics. Slickenslides and argillipedoturbation
+    (disruption and mixing caused by shrink-swell of the soil mass) are diagnostic
+    features of these soils. The horizons that result from this mixing are inverted
+    of material and are called vertic horizons (e.g., Bv, Cv). As a mass of soil is
+    displaced along a crack, the face of the mass can become very smooth and polished
+    and these polished surfaces are called slickenslides. The horizons in which slickenslides
+    occur are Bss, Ckss, or Cgss. Vertisols mainly occur in the cool, subarid to subhumid,
+    grassland portion of the Interior Plains of western Canada."
   Images:
   - {fileID: 21300000, guid: 3e5a0b52071321e4cbae7466875085a5, type: 3}
   quizzes:

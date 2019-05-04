@@ -16,12 +16,14 @@ MonoBehaviour:
   ShowOnboardingButton: 0
   Title: Podzol
   Description:
-  - "These soils are typically found in coniferous forests located on coarse deposits
-    in regions with the mean annual precipitation >700 mm. Podzols have B horizons
-    that are enriched with amorphous material composed of well-decomposed organic
-    matter, aluminum and iron (i.e., Bf, Bhf, Bh). These soils generally have organic
-    surface horizons, a light coloured eluvial horizon (which may be absent), and
-    a reddish to very dark, almost black B horizon with an abrupt upper boundary.\r\n"
+  - "**As one of the typical forest soils, Podzols occur at higher elevation (at and
+    above 1,000 m on our\r\ntarget map) where there is enough moisture to support
+    tree growth.**\n\nThese soils are typically found in coniferous forests located
+    on coarse deposits in regions with the mean annual precipitation >700 mm. Podzols
+    have B horizons that are enriched with amorphous material composed of well-decomposed
+    organic matter, aluminum and iron (i.e., Bf, Bhf, Bh). These soils generally have
+    organic surface horizons, a light coloured eluvial horizon (which may be absent),
+    and a reddish to very dark, almost black B horizon with an abrupt upper boundary.\r\n"
   Images:
   - {fileID: 21300000, guid: bdd14fb02fe043643a656fcc49338bcc, type: 3}
   quizzes:

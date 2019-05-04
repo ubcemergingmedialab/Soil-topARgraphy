@@ -16,13 +16,16 @@ MonoBehaviour:
   ShowOnboardingButton: 0
   Title: Brunisol
   Description:
-  - "These soils have enough horizon development to exclude them from Regosols, but
-    lack sufficient development required for other soil orders. Brunisols are a stage
-    in an evolutionary sequence that begins with an unweathered parent material (Regosolic
-    soils) and ends with development of a \u201Cmature\u201D soil (e.g., Podzol).
-    Several horizon types are used as diagnostic horizons for the Brunisols  (although
-    all must be at least 5 cm thick), including Bm (a horizon that has undergone minimal
-    pedogenic alteration), Bfj, Btj, and Bhjfj."
+  - "****Topography does not have a prominent, direct role in development of Vertisols;
+    they can be\r\npresent at any part of topography. Near Kamloops, these soils are
+    often present at mid elevation at\r\n~800 m. **\n\nThese soils have enough horizon
+    development to exclude them from Regosols, but lack sufficient development required
+    for other soil orders. Brunisols are a stage in an evolutionary sequence that
+    begins with an unweathered parent material (Regosolic soils) and ends with development
+    of a \u201Cmature\u201D soil (e.g., Podzol). Several horizon types are used as
+    diagnostic horizons for the Brunisols  (although all must be at least 5 cm thick),
+    including Bm (a horizon that has undergone minimal pedogenic alteration), Bfj,
+    Btj, and Bhjfj."
   Images:
   - {fileID: 21300000, guid: ad288fa76e3518244937ea232f3dc829, type: 3}
   quizzes:

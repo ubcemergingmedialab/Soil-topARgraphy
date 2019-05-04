@@ -16,12 +16,14 @@ MonoBehaviour:
   ShowOnboardingButton: 0
   Title: Luvisol
   Description:
-  - "Luvisols are characterized by a textural contrast between the A and the B horizon
-    \u2013 the Ae horizon has less clay than the Bt horizon. This difference in clay
-    content between the two horizons is due to transfer of clay from the Ae (eluvial)
-    to the Bt (illuvial) horizon by vertically moving soil water. Luvisols develop
-    characteristically in well to imperfectly drained sites, under forests in subhumid
-    to humid, mild to very cold climates."
+  - "**As one of the typical forest soils, Luvisols occur at higher elevation (at
+    and above 1,000 m on our\r\ntarget map) where there is enough moisture to support
+    tree growth.**\n\nLuvisols are characterized by a textural contrast between the
+    A and the B horizon \u2013 the Ae horizon has less clay than the Bt horizon. This
+    difference in clay content between the two horizons is due to transfer of clay
+    from the Ae (eluvial) to the Bt (illuvial) horizon by vertically moving soil water.
+    Luvisols develop characteristically in well to imperfectly drained sites, under
+    forests in subhumid to humid, mild to very cold climates."
   Images:
   - {fileID: 21300000, guid: 8a9254bf74ad25748aa51b7900bb31eb, type: 3}
   quizzes:
